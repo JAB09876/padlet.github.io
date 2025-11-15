@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Noticiero Popular - Grupo C</title>
+    <title>E-Portafolio Vivencial - Secciones 1, 2 y 3 - Grupo C</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Google Fonts -->
@@ -12,127 +12,150 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <style>
         body { background: #f8f9fa; font-family: 'Montserrat', sans-serif; }
-        .news-container { max-width: 1000px; margin: auto; padding: 20px; }
-        .news-card { background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 25px; overflow: hidden; }
-        .news-header { background: #dc3545; color: #fff; padding: 20px; text-align: center; }
-        .news-header h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2.2rem; }
-        .cable-title { background: #0d6efd; color: #fff; padding: 10px 15px; border-radius: 8px; font-weight: 600; margin: 20px 0 15px; }
+        .port-container { max-width: 1000px; margin: auto; padding: 20px; }
+        .port-card { background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 25px; overflow: hidden; }
+        .section-header { background: #006a4e; color: #fff; padding: 15px; text-align: center; }
+        .section-header h2 { font-family: 'Playfair Display', serif; margin: 0; font-size: 1.8rem; }
+        .story-title { background: #d4af37; color: #fff; padding: 10px 15px; border-radius: 8px; font-weight: 600; margin: 15px 0; display: inline-block; }
+        .legend-card { border-left: 5px solid #006a4e; padding: 15px; margin-bottom: 15px; background: #f8f9fa; }
+        .reflection-card { background: #e9f7ef; border: 1px solid #28a745; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
         .quote { font-style: italic; color: #495057; border-left: 4px solid #ffc107; padding-left: 15px; margin: 15px 0; }
         .media-placeholder { background: #e9ecef; border: 2px dashed #adb5bd; border-radius: 10px; height: 180px; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 1rem; margin: 15px 0; }
         .ref-list { font-size: 0.9rem; }
         footer { background: #343a40; color: #fff; padding: 15px; text-align: center; margin-top: 30px; }
-        @media (max-width: 768px) { .news-header h1 { font-size: 1.6rem; } }
+        @media (max-width: 768px) { .section-header h2 { font-size: 1.4rem; } }
     </style>
 </head>
 <body>
 
-<div class="news-container">
+<div class="port-container">
 
-    <!-- PORTADA DEL NOTICIERO -->
-    <div class="news-card">
-        <div class="news-header">
-            <h1>¡Última Hora Tica!</h1>
-            <p class="mb-0">Noticiero Popular – Grupo C | III Cuatrimestre 2025</p>
-            <p class="mb-0">Curso: Literatura Costarricense e Identidad Nacional</p>
-            <p class="mb-0">Prof.: M.ª Gabriela Carvajal Espinoza</p>
-            <p><strong>Integrantes:</strong> Ana López, Carlos Ramírez, María González, Pedro Sánchez, Laura Herrera</p>
+    <!-- SECCIÓN 1: RELATOS SOBRE COMIDAS Y REMEDIOS -->
+    <div class="port-card">
+        <div class="section-header">
+            <h2>Sección 1: Relatos sobre comidas y remedios tradicionales familiares</h2>
+        </div>
+        <div class="p-4">
+
+            <!-- Relato 1: Gallo Pinto -->
+            <div class="mb-4">
+                <h4 class="story-title"><i class="fas fa-utensils me-2"></i>El Gallo Pinto de la abuela</h4>
+                <p>Mi abuela, <strong>Doña María Pérez</strong> (Guanacaste, 1945), preparaba el gallo pinto cada domingo. Receta de 1950: arroz y frijoles del día anterior, sofritos con cebolla, chile dulce, culantro y Salsa Lizano. <span class="quote">“No se desperdicia nada y se une a la familia”</span>, decía.</p>
+                <p><strong>Vivencia:</strong> En la cocina de leña, todos ayudábamos. Representa la resiliencia tica y la vida rural, como en el costumbrismo de Magón.</p>
+                <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Foto del plato – agregar en Padlet]</div>
+                <audio controls class="w-100"><source src="gallo_pinto_abuela.mp3" type="audio/mpeg">Audio de la narración</audio>
+            </div>
+
+            <!-- Relato 2: Tamales en Navidad -->
+            <div class="mb-4">
+                <h4 class="story-title"><i class="fas fa-gift me-2"></i>Tamales en Navidad</h4>
+                <p>En Alajuela, la familia de <strong>Carlos Ramírez</strong> hace tamales desde 1970. Masa de maíz, carne de cerdo, arroz, garbanzos, pasas, envueltos en hoja de plátano. <span class="quote">“La tamaleada era fiesta: cantábamos villancicos”</span>.</p>
+                <p><strong>Vivencia:</strong> Ritual comunitario que fortalece la identidad mestiza. Evoca el romanticismo de Jiménez en sus fiestas patronales.</p>
+                <div class="media-placeholder"><i class="fas fa-video fa-2x"></i> [Video de la preparación – agregar]</div>
+            </div>
+
+            <!-- Relato 3: Infusión de culantro -->
+            <div class="mb-4">
+                <h4 class="story-title"><i class="fas fa-leaf me-2"></i>Infusión de culantro para el estómago</h4>
+                <p>Mi tía (Cartago, 1960) usa <em>Eryngium foetidum</em> hervido. <span class="quote">“Después de ferias, esto aliviaba todo”</span>. Remedio indígena preservado en familias.</p>
+                <p><strong>Vivencia:</strong> Conocimiento herbal que conecta con la identidad ecológica tica. Similar a descripciones en el realismo de Gagini.</p>
+                <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Foto de la planta – agregar]</div>
+            </div>
+
         </div>
     </div>
 
-    <!-- PRESENTACIÓN DEL PROGRAMA -->
-    <div class="news-card">
+    <!-- SECCIÓN 2: LEYENDAS COMUNALES -->
+    <div class="port-card">
+        <div class="section-header">
+            <h2>Sección 2: Leyendas o historias comunales</h2>
+        </div>
         <div class="p-4">
-            <h3 class="cable-title"><i class="fas fa-tv me-2"></i>Presentación del Programa</h3>
-            <p><strong>¡Bienvenidos a “Última Hora Tica!”</strong> El noticiero que revive la literatura costarricense como si fuera noticia de hoy. Conducido por Ana López y Carlos Ramírez, reportajes en vivo desde el Valle Central, entrevistas exclusivas y análisis profundo. ¡Pura vida literaria!</p>
+
+            <!-- Leyenda 1: La Llorona -->
+            <div class="legend-card">
+                <h5><i class="fas fa-ghost me-2"></i>La Llorona</h5>
+                <p>Mujer que ahogó a sus hijos y vaga llorando: <span class="quote">“¡Ay, mis hijos!”</span>. Aparece en ríos de Guanacaste y Cartago. Fusión indígena-española. Advierte sobre celos y pecado.</p>
+                <p><strong>Identidad:</strong> Refleja conflictos históricos y moral colectiva. Vinculada al romanticismo que idealiza lo sobrenatural.</p>
+                <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Ilustración – agregar]</div>
+                <audio controls class="w-100"><source src="llorona_narracion.mp3" type="audio/mpeg">Narración oral</audio>
+            </div>
+
+            <!-- Leyenda 2: El Cadejos -->
+            <div class="legend-card">
+                <h5><i class="fas fa-paw me-2"></i>El Cadejos</h5>
+                <p>Perro negro con ojos rojos y cadenas. Protege a los buenos, castiga a trasnochadores. Tradición mesoamericana en el Valle Central.</p>
+                <p><strong>Identidad:</strong> Dualidad bien/mal en la cultura tica. Costumbrismo de Magón retrata lo rural con toques mágicos.</p>
+                <div class="media-placeholder"><i class="fas fa-volume-up fa-2x"></i> [Grabación oral – agregar]</div>
+            </div>
+
         </div>
     </div>
 
-    <!-- TITULAR Y ENTRADILLA (ÚNICOS) -->
-    <div class="news-card">
+    <!-- SECCIÓN 3: ANTES PENSABA... AHORA PIENSO... -->
+    <div class="port-card">
+        <div class="section-header">
+            <h2>Sección 3: Rutina de aprendizaje “Antes pensaba… Ahora pienso…”</h2>
+        </div>
         <div class="p-4">
-            <h3 class="cable-title"><i class="fas fa-bullhorn me-2"></i>Titular</h3>
-            <p class="lead fw-bold text-danger">¡Carreras clandestinas en San Juan: el amor desafía la tradición!</p>
-            
-            <h3 class="cable-title mt-4"><i class="fas fa-newspaper me-2"></i>Entradilla</h3>
-            <p>En el corazón del romanticismo costarricense, <em>Las carreras de San Juan</em> de Manuel de Jesús Jiménez estalla en titulares: un joven enamorado rompe las reglas de la fiesta patronal para conquistar a su amada. ¿Tradición o rebeldía? ¡Todo en vivo desde 1840!</p>
+
+            <!-- Ana López -->
+            <div class="reflection-card">
+                <h6><strong>Ana López (Administración)</strong></h6>
+                <p><strong>Antes pensaba:</strong> La literatura costarricense era solo cuentos viejos sin utilidad.</p>
+                <p><strong>Ahora pienso:</strong> Es un espejo vivo de nuestra identidad. El romanticismo de Jiménez une tradición y emoción; los relatos familiares me hicieron valorar mi herencia.</p>
+            </div>
+
+            <!-- Carlos Ramírez -->
+            <div class="reflection-card">
+                <h6><strong>Carlos Ramírez (Ingeniería)</strong></h6>
+                <p><strong>Antes pensaba:</strong> Identidad nacional = himno y bandera.</p>
+                <p><strong>Ahora pienso:</strong> Se vive en lo cotidiano. Los remedios herbales y el realismo de Gagini muestran resiliencia mestiza. Este trabajo me transformó.</p>
+            </div>
+
+            <!-- María González -->
+            <div class="reflection-card">
+                <h6><strong>María González (Educación)</strong></h6>
+                <p><strong>Antes pensaba:</strong> Las leyendas eran supersticiones infantiles.</p>
+                <p><strong>Ahora pienso:</strong> Son memoria cultural. El costumbrismo las preserva; La Llorona refleja conflictos históricos.</p>
+            </div>
+
+            <!-- Pedro Sánchez -->
+            <div class="reflection-card">
+                <h6><strong>Pedro Sánchez (Turismo)</strong></h6>
+                <p><strong>Antes pensaba:</strong> El curso era solo leer libros antiguos.</p>
+                <p><strong>Ahora pienso:</strong> Integra vivencias. Las comidas tradicionales son narrativa nacional; el romanticismo fortalece pertenencia.</p>
+            </div>
+
+            <!-- Laura Herrera -->
+            <div class="reflection-card">
+                <h6><strong>Laura Herrera (Psicología)</strong></h6>
+                <p><strong>Antes pensaba:</strong> La identidad tica era uniforme y pacífica.</p>
+                <p><strong>Ahora pienso:</strong> Es compleja, con raíces indígenas. La literatura (incluso postmodernismo) la cuestiona y celebra.</p>
+            </div>
+
         </div>
     </div>
 
-    <!-- CUERPO DEL NOTICIERO: 4 CABLES -->
-
-    <!-- Cable 1: Acontecimiento principal -->
-    <div class="news-card">
+    <!-- REFERENCIAS -->
+    <div class="port-card">
         <div class="p-4">
-            <h3 class="cable-title"><i class="fas fa-running me-2"></i>Cable Noticioso 1 – Acontecimiento Principal</h3>
-            <p><strong>Noticia de última hora desde San Juan de Tibás, 1840.</strong> Durante las tradicionales carreras de cintas en honor a San Juan Bautista, un joven jinete de nombre <em>Juan</em> ha desafiado todas las normas al dedicarle su victoria a <em>María</em>, hija de un poderoso hacendado que prohibió el noviazgo. Testigos aseguran que el joven gritó: <span class="quote">“¡Esta cinta es para ti, aunque el mundo se oponga!”</span></p>
-            <p>El acto ha generado revuelo: ¿es un gesto romántico o una afrenta a la tradición? El padre de María exige castigo, mientras el pueblo aplaude el valor del enamorado. Las carreras, antes un ritual comunitario, ahora son escenario de pasión y rebeldía. <em>“El amor no entiende de cintas ni de jerarquías”</em>, declaró un vecino.</p>
-            <div class="media-placeholder"><i class="fas fa-video fa-2x"></i> [Escena grabada de la carrera – en video]</div>
-        </div>
-    </div>
-
-    <!-- Cable 2: Movimiento literario -->
-    <div class="news-card">
-        <div class="p-4">
-            <h3 class="cable-title"><i class="fas fa-scroll me-2"></i>Cable Noticioso 2 – Movimiento Literario</h3>
-            <p><strong>Sección Cultura:</strong> Conectamos con nuestra especialista en literatura, <em>María González</em>, desde la Biblioteca Nacional.</p>
-            <p><em>“Estamos ante una obra clave del Romanticismo costarricense (1830-1870)”</em>, explica. Este movimiento, influido por la independencia centroamericana y el auge del café, exalta el sentimiento, la naturaleza y el folclor. <em>Las carreras de San Juan</em> idealiza la vida rural, la fiesta patronal y el amor imposible, rechazando el racionalismo para abrazar la emoción pura.</p>
-            <p>Contexto: tras la independencia (1821), Costa Rica busca identidad propia. El romanticismo pinta al tico como noble, valiente y apasionado, usando la naturaleza (ríos, volcanes, fiestas) como escenario del alma nacional.</p>
-            <div class="media-placeholder"><i class="fas fa-microphone fa-2x"></i> [Entrevista a especialista – audio]</div>
-        </div>
-    </div>
-
-    <!-- Cable 3: Datos biográficos y bibliográficos del autor -->
-    <div class="news-card">
-        <div class="p-4">
-            <h3 class="cable-title"><i class="fas fa-user-tie me-2"></i>Cable Noticioso 3 – Autor</h3>
-            <p><strong>Entrevista exclusiva:</strong> Viajamos al pasado para hablar con <em>Manuel de Jesús Jiménez</em> (1807-1880), poeta, periodista y político costarricense.</p>
-            <p><em>“Nací en Cartago, estudié en León, Nicaragua, y regresé para fundar el periódico <strong>El Costarricense</strong> en 1833”</em>, relata. Autor de <em>Himno a la Independencia</em> y <em>Las carreras de San Juan</em> (publicado en 1840), Jiménez fue diputado, ministro y presidente interino. Su obra combina patriotismo, religión y costumbres populares.</p>
-            <p><em>“Quise mostrar que en la humilde fiesta de pueblo late el corazón de la nación”</em>, confiesa. Murió en San José, dejando un legado romántico que inspira generaciones.</p>
-            <div class="media-placeholder"><i class="fas fa-video fa-2x"></i> [Entrevista al autor – actuación]</div>
-        </div>
-    </div>
-
-    <!-- Cable 4: Lenguaje literario, símbolos, figuras -->
-    <div class="news-card">
-        <div class="p-4">
-            <h3 class="cable-title"><i class="fas fa-quote-left me-2"></i>Cable Noticioso 4 – Lenguaje Literario</h3>
-            <p><strong>Sección Análisis:</strong> Con Pedro Sánchez, experto en retórica.</p>
-            <p>La obra usa <strong>hipérbole</strong> (“el viento parecía detenerse”), <strong>personificación</strong> (“la cinta danzaba en el aire”) y <strong>metáforas</strong> (“el amor es una carrera sin fin”). El <em>símbolo central</em> es la <strong>cinta</strong>: premio, honor, pero también lazo que une o ata a los enamorados.</p>
-            <p>Intertexto: evoca la tradición medieval de torneos por damas. El <em>ritmo poético</em> imita el galope: versos largos, exclamaciones, repeticiones. <em>“¡Arre, caballo! ¡Arre, corazón!”</em> – un grito que resuena en la identidad tica.</p>
-            <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Ilustración de la cinta – en video]</div>
-        </div>
-    </div>
-
-    <!-- DESPEDIDA -->
-    <div class="news-card">
-        <div class="p-4">
-            <h3 class="cable-title"><i class="fas fa-sign-out-alt me-2"></i>Despedida</h3>
-            <p><strong>¡Gracias por sintonizar “Última Hora Tica!”</strong> Hoy revivimos <em>Las carreras de San Juan</em>, una joya del romanticismo que nos enseña que el amor, como la patria, se defiende con pasión. ¡Nos vemos en la próxima edición!</p>
-            <p class="text-center"><em>Firmado: Grupo C – Literatura Costarricense</em></p>
-        </div>
-    </div>
-
-    <!-- REFERENCIAS (para documento escrito) -->
-    <div class="news-card">
-        <div class="p-4">
-            <h3 class="cable-title"><i class="fas fa-book me-2"></i>Referencias (APA 7ª edición)</h3>
+            <h4 class="story-title"><i class="fas fa-book me-2"></i>Referencias (APA 7ª edición)</h4>
             <ul class="ref-list">
-                <li>Jiménez, M. de J. (1840). <em>Las carreras de San Juan</em>. En <em>Obras poéticas</em>. San José, Costa Rica.</li>
-                <li>Quesada Soto, Á. (2010). <em>Historia de la literatura costarricense</em>. Editorial Universidad de Costa Rica.</li>
-                <li>Fernández Guardia, R. (1920). <em>Crónicas y anécdotas costarricenses</em>. Imprenta Lehmann.</li>
-                <li>Universidad de Costa Rica. (2023). <em>Romanticismo en Costa Rica</em>. https://letras.ucr.ac.cr/romanticismo</li>
+                <li>Ministerio de Cultura y Juventud. (2005). <em>Cocina Tradicional Costarricense 1</em>. https://www.patrimonio.go.cr/biblioteca_digital/publicaciones/2005/cocina_tradicional_1.pdf</li>
+                <li>Universidad de Costa Rica. (2017, 28 marzo). <em>Nuevo libro recopila historias y leyendas costarricenses</em>. https://vinv.ucr.ac.cr/es/noticias/nuevo-libro-recopila-historias-y-leyendas-costarricenses</li>
+                <li>Wikipedia. (s. f.). <em>Leyendas de Costa Rica</em>. https://es.wikipedia.org/wiki/Leyendas_de_Costa_Rica</li>
             </ul>
-            <p><strong>Uso de IA:</strong> Este guion fue apoyado por Grok (xAI, 2025) para redacción y estructura académica.</p>
+            <p><strong>Uso de IA:</strong> Este contenido se elaboró con apoyo de Grok (xAI, 2025) como herramienta de asistencia académica para redacción y organización.</p>
         </div>
     </div>
 
 </div>
 
 <footer>
-    <p>Noticiero Popular – Grupo C | Entrega: Semana 13 | Duración máxima: 20 min</p>
+    <p>E-Portafolio Vivencial – Grupo C | UTN 2025 | Entrega: Semana 12</p>
 </footer>
 
-<!-- Bootstrap 5 JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
