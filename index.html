@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Portafolio Vivencial Grupal - Grupo C</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Google Fonts (opcional, para mejor tipografía) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); font-family: 'Montserrat', sans-serif; }
+        .padlet-container { max-width: 1100px; margin: auto; padding: 20px; }
+        .padlet-card { background: #fff; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 30px; transition: transform 0.3s; }
+        .padlet-card:hover { transform: translateY(-5px); }
+        .card-header-custom { background: #006a4e; color: #fff; padding: 20px; text-align: center; }
+        .card-header-custom h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2rem; }
+        .section-title { background: #d4af37; color: #fff; padding: 12px 20px; border-radius: 8px; font-weight: 600; margin-bottom: 15px; display: inline-block; }
+        .student-card { background: #f8f9fa; border-left: 5px solid #006a4e; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0; }
+        .quote { font-style: italic; color: #555; border-left: 4px solid #d4af37; padding-left: 15px; margin: 15px 0; }
+        .media-placeholder { background: #e9ecef; border: 2px dashed #adb5bd; border-radius: 10px; height: 200px; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 1.1rem; margin: 15px 0; }
+        .ref-list { font-size: 0.9rem; }
+        footer { background: #343a40; color: #fff; padding: 20px; text-align: center; margin-top: 40px; }
+        @media (max-width: 768px) { .card-header-custom h1 { font-size: 1.5rem; } }
+    </style>
+</head>
+<body>
+
+<div class="padlet-container">
+
+    <!-- 1. PORTADA -->
+    <div class="padlet-card">
+        <div class="card-header-custom">
+            <h1>Universidad Técnica Nacional</h1>
+            <p class="mb-0">III Cuatrimestre – 2025 | Curso: Literatura costarricense e identidad nacional</p>
+            <p class="mb-0">Prof.: M.ª Gabriela Carvajal Espinoza | Área de Formación Humanística</p>
+            <h2 class="mt-3">E-Portafolio Vivencial Grupal - Grupo C</h2>
+            <p class="mb-0"><strong>Integrantes:</strong></p>
+            <ol class="list-unstyled">
+                <li>Ana López – Administración</li>
+                <li>Carlos Ramírez – Ingeniería</li>
+                <li>María González – Educación</li>
+                <li>Pedro Sánchez – Turismo</li>
+                <li>Laura Herrera – Psicología</li>
+            </ol>
+            <p><strong>Fecha de entrega:</strong> 15 de noviembre de 2025</p>
+        </div>
+    </div>
+
+    <!-- 2. APARTADO INTRODUCTORIO -->
+    <div class="padlet-card">
+        <div class="p-4">
+            <h3 class="section-title"><i class="fas fa-book-open me-2"></i>Introducción</h3>
+            <p>Este e-portafolio vivencial recopila el proceso de aprendizaje grupal en el curso, integrando investigación, testimonios culturales y reflexiones críticas sobre la identidad costarricense. A través de relatos familiares, leyendas comunales y la técnica “Antes pensaba… Ahora pienso…”, exploramos cómo la literatura nacional —desde el romanticismo hasta el costumbrismo— refleja y moldea nuestra memoria colectiva. El objetivo es evidenciar la conexión entre tradición oral, vivencias personales y los textos literarios estudiados, promoviendo un reconocimiento profundo de lo “tico”.</p>
+        </div>
+    </div>
+
+    <!-- 3. PRESENTACIÓN DEL ESTUDIANTE (ya ocupado por el usuario, pero se incluye estructura) -->
+    <div class="padlet-card">
+        <div class="p-4">
+            <h3 class="section-title"><i class="fas fa-user-graduate me-2"></i>Presentación de los Estudiantes</h3>
+            <div class="row">
+                <!-- Ejemplo de un estudiante (repetir x5) -->
+                <div class="col-md-6">
+                    <div class="student-card">
+                        <h5><i class="fas fa-user me-2"></i>Ana López</h5>
+                        <p><strong>Carrera:</strong> Administración</p>
+                        <p><strong>Mensaje de bienvenida:</strong> ¡Hola! Este portafolio es un viaje por nuestras raíces. Gracias por acompañarnos.</p>
+                        <p class="quote">“El romanticismo nos enseñó a soñar con la patria” – Manuel de Jesús Jiménez.</p>
+                        <p><em>Comentario:</em> Esta frase me impactó porque antes veía la literatura como algo lejano; ahora entiendo que idealiza nuestra identidad.</p>
+                    </div>
+                </div>
+                <!-- Repetir para los otros 4 estudiantes -->
+                <div class="col-md-6">
+                    <div class="student-card">
+                        <h5><i class="fas fa-user me-2"></i>Carlos Ramírez</h5>
+                        <p><strong>Carrera:</strong> Ingeniería</p>
+                        <p><strong>Mensaje de bienvenida:</strong> ¡Pura vida! Exploraremos cómo lo cotidiano define quiénes somos.</p>
+                        <p class="quote">“La naturaleza es el alma de la nación” – Romanticismo costarricense.</p>
+                        <p><em>Comentario:</em> Relaciono esto con los remedios herbales familiares; la literatura los eleva a símbolo nacional.</p>
+                    </div>
+                </div>
+                <!-- ... (los otros 3 estudiantes con foto opcional: <img src="foto.jpg" class="img-fluid rounded-circle" width="80">) -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. DESARROLLO -->
+
+    <!-- Sección 1: Relatos sobre comidas y remedios tradicionales -->
+    <div class="padlet-card">
+        <div class="p-4">
+            <h3 class="section-title"><i class="fas fa-utensils me-2"></i>Sección 1: Relatos sobre comidas y remedios tradicionales familiares</h3>
+            
+            <div class="accordion" id="relatosAccordion">
+                <!-- Relato 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#relato1">
+                            El Gallo Pinto de la abuela (Comida tradicional)
+                        </button>
+                    </h2>
+                    <div id="relato1" class="accordion-collapse collapse show" data-bs-parent="#relatosAccordion">
+                        <div class="accordion-body">
+                            <p>Mi abuela, originaria de Guanacaste, siempre preparaba el gallo pinto los domingos por la mañana. Receta de los años 1950: arroz y frijoles sobrantes, sofritos con cebolla, chile dulce, culantro y Salsa Lizano. <em>“Era nuestra forma de no desperdiciar nada y unir a la familia”</em> – Doña María Pérez.</p>
+                            <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Foto familiar del plato – agregar en Padlet]</div>
+                            <audio controls class="w-100"><source src="audio_abuela.mp3" type="audio/mpeg">Tu navegador no soporta audio.</audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Relato 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relato2">
+                            Tamales en Navidad (Comida tradicional)
+                        </button>
+                    </h2>
+                    <div id="relato2" class="accordion-collapse collapse" data-bs-parent="#relatosAccordion">
+                        <div class="accordion-body">
+                            <p>Ritual navideño en Alajuela: masa de maíz, carne de cerdo, arroz, garbanzos, pasas, envueltos en hoja de plátano. <em>“Toda la familia se reunía para ‘la tamaleada’”</em>.</p>
+                            <div class="media-placeholder"><i class="fas fa-video fa-2x"></i> [Video de la preparación – agregar en Padlet]</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Relato 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relato3">
+                            Infusión de culantro para el malestar estomacal (Remedio)
+                        </button>
+                    </h2>
+                    <div id="relato3" class="accordion-collapse collapse" data-bs-parent="#relatosAccordion">
+                        <div class="accordion-body">
+                            <p>Remedio de Cartago: hojas de culantro coyote hervidas. <em>“Natural y evita ir al doctor”</em> – Tía de Cartago.</p>
+                            <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Foto de la planta – agregar en Padlet]</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 2: Leyendas o historias comunales -->
+    <div class="padlet-card">
+        <div class="p-4">
+            <h3 class="section-title"><i class="fas fa-ghost me-2"></i>Sección 2: Leyendas o historias comunales</h3>
+            
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">La Llorona</h5>
+                            <p class="card-text">Mujer que ahogó a sus hijos y vaga llorando por ríos. Advierte sobre celos y pecado. Fusión indígena-española.</p>
+                            <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Ilustración – agregar]</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100 border-danger">
+                        <div class="card-body">
+                            <h5 class="card-title">El Cadejos</h5>
+                            <p class="card-text">Perro negro con ojos rojos. Protege o castiga a trasnochadores. Dualidad bien/mal en la cultura tica.</p>
+                            <div class="media-placeholder"><i class="fas fa-volume-up fa-2x"></i> [Grabación oral – agregar]</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 3: Antes pensaba… Ahora pienso… -->
+    <div class="padlet-card">
+        <div class="p-4">
+            <h3 class="section-title"><i class="fas fa-lightbulb me-2"></i>Sección 3: Rutina de aprendizaje “Antes pensaba… Ahora pienso…”</h3>
+            <div class="row">
+                <!-- Estudiante 1 -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card text-white bg-success">
+                        <div class="card-body">
+                            <h6>Ana López</h6>
+                            <p><strong>Antes:</strong> Literatura = cuentos antiguos sin relevancia.</p>
+                            <p><strong>Ahora:</strong> Espejo de identidad; romanticismo une generaciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Estudiante 2 -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card text-white bg-info">
+                        <div class="card-body">
+                            <h6>Carlos Ramírez</h6>
+                            <p><strong>Antes:</strong> Identidad = himno y bandera.</p>
+                            <p><strong>Ahora:</strong> Vive en lo cotidiano; realismo revela resiliencia.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repetir para los otros 3 -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card text-white bg-warning">
+                        <div class="card-body">
+                            <h6>María González</h6>
+                            <p><strong>Antes:</strong> Leyendas = supersticiones.</p>
+                            <p><strong>Ahora:</strong> Pilares de memoria cultural; costumbrismo las preserva.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card text-white bg-danger">
+                        <div class="card-body">
+                            <h6>Pedro Sánchez</h6>
+                            <p><strong>Antes:</strong> Curso = leer libros viejos.</p>
+                            <p><strong>Ahora:</strong> Integra vivencias; romanticismo fortalece pertenencia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card text-white bg-secondary">
+                        <div class="card-body">
+                            <h6>Laura Herrera</h6>
+                            <p><strong>Antes:</strong> Identidad uniforme.</p>
+                            <p><strong>Ahora:</strong> Compleja, con raíces indígenas; literatura la cuestiona.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. APARTADO DE CIERRE -->
+    <div class="padlet-card">
+        <div class="p-4">
+            <h3 class="section-title"><i class="fas fa-check-circle me-2"></i>Conclusión</h3>
+            <p>Este e-portafolio integra el curso con experiencias personales, destacando que tradiciones como el gallo pinto o La Llorona son elementos vivos que enlazan con la literatura nacional. El costumbrismo captura lo rural, el romanticismo idealiza el folclor, y el realismo denuncia realidades. Nuestras vivencias fomentan diálogo intergeneracional y orgullo por la identidad mestiza, ecológica y resiliente. Preservemos estas memorias para el futuro.</p>
+        </div>
+    </div>
+
+    <!-- 6. REFERENCIAS BIBLIOGRÁFICAS -->
+    <div class="padlet-card">
+        <div class="p-4">
+            <h3 class="section-title"><i class="fas fa-book me-2"></i>Referencias (APA 7ª edición)</h3>
+            <ul class="ref-list">
+                <li>Adventure Tours Costa Rica. (2020, 28 febrero). <em>10 Deliciosos Platos Costarricenses</em>. https://www.adventuretourscostarica.com/es/blog/10-delicious-costa-rican-dishes-that-your-kids-will-actually-eat</li>
+                <li>Capture the Atlas. (s. f.). <em>20 Platos de la Comida Típica de Costa Rica Imprescindibles</em>. https://capturetheatlas.com/es/comida-tipica-costa-rica/</li>
+                <li>Ministerio de Cultura y Juventud. (2005). <em>Cocina Tradicional Costarricense 1</em>. Patrimonio.go.cr. https://www.patrimonio.go.cr/biblioteca_digital/publicaciones/2005/cocina_tradicional_1.pdf</li>
+                <li>Universidad de Costa Rica. (2017, 28 marzo). <em>Nuevo libro recopila historias y leyendas costarricenses</em>. https://vinv.ucr.ac.cr/es/noticias/nuevo-libro-recopila-historias-y-leyendas-costarricenses</li>
+                <li>Wikipedia. (s. f.). <em>Leyendas de Costa Rica</em>. https://es.wikipedia.org/wiki/Leyendas_de_Costa_Rica</li>
+            </ul>
+            <p class="mt-3"><strong>Uso de IA:</strong> Este documento se elaboró con apoyo de Grok (xAI, 2025), empleado como herramienta de asistencia académica para estructuración y redacción.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>E-Portafolio Vivencial Grupal – Grupo C | UTN 2025 | <a href="#" class="text-white">Enlace compartido con docente</a></p>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
