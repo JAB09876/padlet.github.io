@@ -3,258 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>E-Portafolio Vivencial Grupal - Grupo C</title>
+    <title>Noticiero Popular - Grupo C</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Google Fonts (opcional, para mejor tipografía) -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <!-- Font Awesome para íconos -->
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); font-family: 'Montserrat', sans-serif; }
-        .padlet-container { max-width: 1100px; margin: auto; padding: 20px; }
-        .padlet-card { background: #fff; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 30px; transition: transform 0.3s; }
-        .padlet-card:hover { transform: translateY(-5px); }
-        .card-header-custom { background: #006a4e; color: #fff; padding: 20px; text-align: center; }
-        .card-header-custom h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2rem; }
-        .section-title { background: #d4af37; color: #fff; padding: 12px 20px; border-radius: 8px; font-weight: 600; margin-bottom: 15px; display: inline-block; }
-        .student-card { background: #f8f9fa; border-left: 5px solid #006a4e; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0; }
-        .quote { font-style: italic; color: #555; border-left: 4px solid #d4af37; padding-left: 15px; margin: 15px 0; }
-        .media-placeholder { background: #e9ecef; border: 2px dashed #adb5bd; border-radius: 10px; height: 200px; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 1.1rem; margin: 15px 0; }
+        body { background: #f8f9fa; font-family: 'Montserrat', sans-serif; }
+        .news-container { max-width: 1000px; margin: auto; padding: 20px; }
+        .news-card { background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 25px; overflow: hidden; }
+        .news-header { background: #dc3545; color: #fff; padding: 20px; text-align: center; }
+        .news-header h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2.2rem; }
+        .cable-title { background: #0d6efd; color: #fff; padding: 10px 15px; border-radius: 8px; font-weight: 600; margin: 20px 0 15px; }
+        .quote { font-style: italic; color: #495057; border-left: 4px solid #ffc107; padding-left: 15px; margin: 15px 0; }
+        .media-placeholder { background: #e9ecef; border: 2px dashed #adb5bd; border-radius: 10px; height: 180px; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 1rem; margin: 15px 0; }
         .ref-list { font-size: 0.9rem; }
-        footer { background: #343a40; color: #fff; padding: 20px; text-align: center; margin-top: 40px; }
-        @media (max-width: 768px) { .card-header-custom h1 { font-size: 1.5rem; } }
+        footer { background: #343a40; color: #fff; padding: 15px; text-align: center; margin-top: 30px; }
+        @media (max-width: 768px) { .news-header h1 { font-size: 1.6rem; } }
     </style>
 </head>
 <body>
 
-<div class="padlet-container">
+<div class="news-container">
 
-    <!-- 1. PORTADA -->
-    <div class="padlet-card">
-        <div class="card-header-custom">
-            <h1>Universidad Técnica Nacional</h1>
-            <p class="mb-0">III Cuatrimestre – 2025 | Curso: Literatura costarricense e identidad nacional</p>
-            <p class="mb-0">Prof.: M.ª Gabriela Carvajal Espinoza | Área de Formación Humanística</p>
-            <h2 class="mt-3">E-Portafolio Vivencial Grupal - Grupo C</h2>
-            <p class="mb-0"><strong>Integrantes:</strong></p>
-            <ol class="list-unstyled">
-                <li>Ana López – Administración</li>
-                <li>Carlos Ramírez – Ingeniería</li>
-                <li>María González – Educación</li>
-                <li>Pedro Sánchez – Turismo</li>
-                <li>Laura Herrera – Psicología</li>
-            </ol>
-            <p><strong>Fecha de entrega:</strong> 15 de noviembre de 2025</p>
+    <!-- PORTADA DEL NOTICIERO -->
+    <div class="news-card">
+        <div class="news-header">
+            <h1>¡Última Hora Tica!</h1>
+            <p class="mb-0">Noticiero Popular – Grupo C | III Cuatrimestre 2025</p>
+            <p class="mb-0">Curso: Literatura Costarricense e Identidad Nacional</p>
+            <p class="mb-0">Prof.: M.ª Gabriela Carvajal Espinoza</p>
+            <p><strong>Integrantes:</strong> Ana López, Carlos Ramírez, María González, Pedro Sánchez, Laura Herrera</p>
         </div>
     </div>
 
-    <!-- 2. APARTADO INTRODUCTORIO -->
-    <div class="padlet-card">
+    <!-- PRESENTACIÓN DEL PROGRAMA -->
+    <div class="news-card">
         <div class="p-4">
-            <h3 class="section-title"><i class="fas fa-book-open me-2"></i>Introducción</h3>
-            <p>Este e-portafolio vivencial recopila el proceso de aprendizaje grupal en el curso, integrando investigación, testimonios culturales y reflexiones críticas sobre la identidad costarricense. A través de relatos familiares, leyendas comunales y la técnica “Antes pensaba… Ahora pienso…”, exploramos cómo la literatura nacional —desde el romanticismo hasta el costumbrismo— refleja y moldea nuestra memoria colectiva. El objetivo es evidenciar la conexión entre tradición oral, vivencias personales y los textos literarios estudiados, promoviendo un reconocimiento profundo de lo “tico”.</p>
+            <h3 class="cable-title"><i class="fas fa-tv me-2"></i>Presentación del Programa</h3>
+            <p><strong>¡Bienvenidos a “Última Hora Tica!”</strong> El noticiero que revive la literatura costarricense como si fuera noticia de hoy. Conducido por Ana López y Carlos Ramírez, reportajes en vivo desde el Valle Central, entrevistas exclusivas y análisis profundo. ¡Pura vida literaria!</p>
         </div>
     </div>
 
-    <!-- 3. PRESENTACIÓN DEL ESTUDIANTE (ya ocupado por el usuario, pero se incluye estructura) -->
-    <div class="padlet-card">
+    <!-- TITULAR Y ENTRADILLA (ÚNICOS) -->
+    <div class="news-card">
         <div class="p-4">
-            <h3 class="section-title"><i class="fas fa-user-graduate me-2"></i>Presentación de los Estudiantes</h3>
-            <div class="row">
-                <!-- Ejemplo de un estudiante (repetir x5) -->
-                <div class="col-md-6">
-                    <div class="student-card">
-                        <h5><i class="fas fa-user me-2"></i>Ana López</h5>
-                        <p><strong>Carrera:</strong> Administración</p>
-                        <p><strong>Mensaje de bienvenida:</strong> ¡Hola! Este portafolio es un viaje por nuestras raíces. Gracias por acompañarnos.</p>
-                        <p class="quote">“El romanticismo nos enseñó a soñar con la patria” – Manuel de Jesús Jiménez.</p>
-                        <p><em>Comentario:</em> Esta frase me impactó porque antes veía la literatura como algo lejano; ahora entiendo que idealiza nuestra identidad.</p>
-                    </div>
-                </div>
-                <!-- Repetir para los otros 4 estudiantes -->
-                <div class="col-md-6">
-                    <div class="student-card">
-                        <h5><i class="fas fa-user me-2"></i>Carlos Ramírez</h5>
-                        <p><strong>Carrera:</strong> Ingeniería</p>
-                        <p><strong>Mensaje de bienvenida:</strong> ¡Pura vida! Exploraremos cómo lo cotidiano define quiénes somos.</p>
-                        <p class="quote">“La naturaleza es el alma de la nación” – Romanticismo costarricense.</p>
-                        <p><em>Comentario:</em> Relaciono esto con los remedios herbales familiares; la literatura los eleva a símbolo nacional.</p>
-                    </div>
-                </div>
-                <!-- ... (los otros 3 estudiantes con foto opcional: <img src="foto.jpg" class="img-fluid rounded-circle" width="80">) -->
-            </div>
-        </div>
-    </div>
-
-    <!-- 4. DESARROLLO -->
-
-    <!-- Sección 1: Relatos sobre comidas y remedios tradicionales -->
-    <div class="padlet-card">
-        <div class="p-4">
-            <h3 class="section-title"><i class="fas fa-utensils me-2"></i>Sección 1: Relatos sobre comidas y remedios tradicionales familiares</h3>
+            <h3 class="cable-title"><i class="fas fa-bullhorn me-2"></i>Titular</h3>
+            <p class="lead fw-bold text-danger">¡Carreras clandestinas en San Juan: el amor desafía la tradición!</p>
             
-            <div class="accordion" id="relatosAccordion">
-                <!-- Relato 1 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#relato1">
-                            El Gallo Pinto de la abuela (Comida tradicional)
-                        </button>
-                    </h2>
-                    <div id="relato1" class="accordion-collapse collapse show" data-bs-parent="#relatosAccordion">
-                        <div class="accordion-body">
-                            <p>Mi abuela, originaria de Guanacaste, siempre preparaba el gallo pinto los domingos por la mañana. Receta de los años 1950: arroz y frijoles sobrantes, sofritos con cebolla, chile dulce, culantro y Salsa Lizano. <em>“Era nuestra forma de no desperdiciar nada y unir a la familia”</em> – Doña María Pérez.</p>
-                            <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Foto familiar del plato – agregar en Padlet]</div>
-                            <audio controls class="w-100"><source src="audio_abuela.mp3" type="audio/mpeg">Tu navegador no soporta audio.</audio>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Relato 2 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relato2">
-                            Tamales en Navidad (Comida tradicional)
-                        </button>
-                    </h2>
-                    <div id="relato2" class="accordion-collapse collapse" data-bs-parent="#relatosAccordion">
-                        <div class="accordion-body">
-                            <p>Ritual navideño en Alajuela: masa de maíz, carne de cerdo, arroz, garbanzos, pasas, envueltos en hoja de plátano. <em>“Toda la familia se reunía para ‘la tamaleada’”</em>.</p>
-                            <div class="media-placeholder"><i class="fas fa-video fa-2x"></i> [Video de la preparación – agregar en Padlet]</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Relato 3 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relato3">
-                            Infusión de culantro para el malestar estomacal (Remedio)
-                        </button>
-                    </h2>
-                    <div id="relato3" class="accordion-collapse collapse" data-bs-parent="#relatosAccordion">
-                        <div class="accordion-body">
-                            <p>Remedio de Cartago: hojas de culantro coyote hervidas. <em>“Natural y evita ir al doctor”</em> – Tía de Cartago.</p>
-                            <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Foto de la planta – agregar en Padlet]</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h3 class="cable-title mt-4"><i class="fas fa-newspaper me-2"></i>Entradilla</h3>
+            <p>En el corazón del romanticismo costarricense, <em>Las carreras de San Juan</em> de Manuel de Jesús Jiménez estalla en titulares: un joven enamorado rompe las reglas de la fiesta patronal para conquistar a su amada. ¿Tradición o rebeldía? ¡Todo en vivo desde 1840!</p>
         </div>
     </div>
 
-    <!-- Sección 2: Leyendas o historias comunales -->
-    <div class="padlet-card">
+    <!-- CUERPO DEL NOTICIERO: 4 CABLES -->
+
+    <!-- Cable 1: Acontecimiento principal -->
+    <div class="news-card">
         <div class="p-4">
-            <h3 class="section-title"><i class="fas fa-ghost me-2"></i>Sección 2: Leyendas o historias comunales</h3>
-            
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <div class="card h-100 border-primary">
-                        <div class="card-body">
-                            <h5 class="card-title">La Llorona</h5>
-                            <p class="card-text">Mujer que ahogó a sus hijos y vaga llorando por ríos. Advierte sobre celos y pecado. Fusión indígena-española.</p>
-                            <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Ilustración – agregar]</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <div class="card h-100 border-danger">
-                        <div class="card-body">
-                            <h5 class="card-title">El Cadejos</h5>
-                            <p class="card-text">Perro negro con ojos rojos. Protege o castiga a trasnochadores. Dualidad bien/mal en la cultura tica.</p>
-                            <div class="media-placeholder"><i class="fas fa-volume-up fa-2x"></i> [Grabación oral – agregar]</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h3 class="cable-title"><i class="fas fa-running me-2"></i>Cable Noticioso 1 – Acontecimiento Principal</h3>
+            <p><strong>Noticia de última hora desde San Juan de Tibás, 1840.</strong> Durante las tradicionales carreras de cintas en honor a San Juan Bautista, un joven jinete de nombre <em>Juan</em> ha desafiado todas las normas al dedicarle su victoria a <em>María</em>, hija de un poderoso hacendado que prohibió el noviazgo. Testigos aseguran que el joven gritó: <span class="quote">“¡Esta cinta es para ti, aunque el mundo se oponga!”</span></p>
+            <p>El acto ha generado revuelo: ¿es un gesto romántico o una afrenta a la tradición? El padre de María exige castigo, mientras el pueblo aplaude el valor del enamorado. Las carreras, antes un ritual comunitario, ahora son escenario de pasión y rebeldía. <em>“El amor no entiende de cintas ni de jerarquías”</em>, declaró un vecino.</p>
+            <div class="media-placeholder"><i class="fas fa-video fa-2x"></i> [Escena grabada de la carrera – en video]</div>
         </div>
     </div>
 
-    <!-- Sección 3: Antes pensaba… Ahora pienso… -->
-    <div class="padlet-card">
+    <!-- Cable 2: Movimiento literario -->
+    <div class="news-card">
         <div class="p-4">
-            <h3 class="section-title"><i class="fas fa-lightbulb me-2"></i>Sección 3: Rutina de aprendizaje “Antes pensaba… Ahora pienso…”</h3>
-            <div class="row">
-                <!-- Estudiante 1 -->
-                <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="card text-white bg-success">
-                        <div class="card-body">
-                            <h6>Ana López</h6>
-                            <p><strong>Antes:</strong> Literatura = cuentos antiguos sin relevancia.</p>
-                            <p><strong>Ahora:</strong> Espejo de identidad; romanticismo une generaciones.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Estudiante 2 -->
-                <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="card text-white bg-info">
-                        <div class="card-body">
-                            <h6>Carlos Ramírez</h6>
-                            <p><strong>Antes:</strong> Identidad = himno y bandera.</p>
-                            <p><strong>Ahora:</strong> Vive en lo cotidiano; realismo revela resiliencia.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repetir para los otros 3 -->
-                <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="card text-white bg-warning">
-                        <div class="card-body">
-                            <h6>María González</h6>
-                            <p><strong>Antes:</strong> Leyendas = supersticiones.</p>
-                            <p><strong>Ahora:</strong> Pilares de memoria cultural; costumbrismo las preserva.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="card text-white bg-danger">
-                        <div class="card-body">
-                            <h6>Pedro Sánchez</h6>
-                            <p><strong>Antes:</strong> Curso = leer libros viejos.</p>
-                            <p><strong>Ahora:</strong> Integra vivencias; romanticismo fortalece pertenencia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="card text-white bg-secondary">
-                        <div class="card-body">
-                            <h6>Laura Herrera</h6>
-                            <p><strong>Antes:</strong> Identidad uniforme.</p>
-                            <p><strong>Ahora:</strong> Compleja, con raíces indígenas; literatura la cuestiona.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h3 class="cable-title"><i class="fas fa-scroll me-2"></i>Cable Noticioso 2 – Movimiento Literario</h3>
+            <p><strong>Sección Cultura:</strong> Conectamos con nuestra especialista en literatura, <em>María González</em>, desde la Biblioteca Nacional.</p>
+            <p><em>“Estamos ante una obra clave del Romanticismo costarricense (1830-1870)”</em>, explica. Este movimiento, influido por la independencia centroamericana y el auge del café, exalta el sentimiento, la naturaleza y el folclor. <em>Las carreras de San Juan</em> idealiza la vida rural, la fiesta patronal y el amor imposible, rechazando el racionalismo para abrazar la emoción pura.</p>
+            <p>Contexto: tras la independencia (1821), Costa Rica busca identidad propia. El romanticismo pinta al tico como noble, valiente y apasionado, usando la naturaleza (ríos, volcanes, fiestas) como escenario del alma nacional.</p>
+            <div class="media-placeholder"><i class="fas fa-microphone fa-2x"></i> [Entrevista a especialista – audio]</div>
         </div>
     </div>
 
-    <!-- 5. APARTADO DE CIERRE -->
-    <div class="padlet-card">
+    <!-- Cable 3: Datos biográficos y bibliográficos del autor -->
+    <div class="news-card">
         <div class="p-4">
-            <h3 class="section-title"><i class="fas fa-check-circle me-2"></i>Conclusión</h3>
-            <p>Este e-portafolio integra el curso con experiencias personales, destacando que tradiciones como el gallo pinto o La Llorona son elementos vivos que enlazan con la literatura nacional. El costumbrismo captura lo rural, el romanticismo idealiza el folclor, y el realismo denuncia realidades. Nuestras vivencias fomentan diálogo intergeneracional y orgullo por la identidad mestiza, ecológica y resiliente. Preservemos estas memorias para el futuro.</p>
+            <h3 class="cable-title"><i class="fas fa-user-tie me-2"></i>Cable Noticioso 3 – Autor</h3>
+            <p><strong>Entrevista exclusiva:</strong> Viajamos al pasado para hablar con <em>Manuel de Jesús Jiménez</em> (1807-1880), poeta, periodista y político costarricense.</p>
+            <p><em>“Nací en Cartago, estudié en León, Nicaragua, y regresé para fundar el periódico <strong>El Costarricense</strong> en 1833”</em>, relata. Autor de <em>Himno a la Independencia</em> y <em>Las carreras de San Juan</em> (publicado en 1840), Jiménez fue diputado, ministro y presidente interino. Su obra combina patriotismo, religión y costumbres populares.</p>
+            <p><em>“Quise mostrar que en la humilde fiesta de pueblo late el corazón de la nación”</em>, confiesa. Murió en San José, dejando un legado romántico que inspira generaciones.</p>
+            <div class="media-placeholder"><i class="fas fa-video fa-2x"></i> [Entrevista al autor – actuación]</div>
         </div>
     </div>
 
-    <!-- 6. REFERENCIAS BIBLIOGRÁFICAS -->
-    <div class="padlet-card">
+    <!-- Cable 4: Lenguaje literario, símbolos, figuras -->
+    <div class="news-card">
         <div class="p-4">
-            <h3 class="section-title"><i class="fas fa-book me-2"></i>Referencias (APA 7ª edición)</h3>
+            <h3 class="cable-title"><i class="fas fa-quote-left me-2"></i>Cable Noticioso 4 – Lenguaje Literario</h3>
+            <p><strong>Sección Análisis:</strong> Con Pedro Sánchez, experto en retórica.</p>
+            <p>La obra usa <strong>hipérbole</strong> (“el viento parecía detenerse”), <strong>personificación</strong> (“la cinta danzaba en el aire”) y <strong>metáforas</strong> (“el amor es una carrera sin fin”). El <em>símbolo central</em> es la <strong>cinta</strong>: premio, honor, pero también lazo que une o ata a los enamorados.</p>
+            <p>Intertexto: evoca la tradición medieval de torneos por damas. El <em>ritmo poético</em> imita el galope: versos largos, exclamaciones, repeticiones. <em>“¡Arre, caballo! ¡Arre, corazón!”</em> – un grito que resuena en la identidad tica.</p>
+            <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Ilustración de la cinta – en video]</div>
+        </div>
+    </div>
+
+    <!-- DESPEDIDA -->
+    <div class="news-card">
+        <div class="p-4">
+            <h3 class="cable-title"><i class="fas fa-sign-out-alt me-2"></i>Despedida</h3>
+            <p><strong>¡Gracias por sintonizar “Última Hora Tica!”</strong> Hoy revivimos <em>Las carreras de San Juan</em>, una joya del romanticismo que nos enseña que el amor, como la patria, se defiende con pasión. ¡Nos vemos en la próxima edición!</p>
+            <p class="text-center"><em>Firmado: Grupo C – Literatura Costarricense</em></p>
+        </div>
+    </div>
+
+    <!-- REFERENCIAS (para documento escrito) -->
+    <div class="news-card">
+        <div class="p-4">
+            <h3 class="cable-title"><i class="fas fa-book me-2"></i>Referencias (APA 7ª edición)</h3>
             <ul class="ref-list">
-                <li>Adventure Tours Costa Rica. (2020, 28 febrero). <em>10 Deliciosos Platos Costarricenses</em>. https://www.adventuretourscostarica.com/es/blog/10-delicious-costa-rican-dishes-that-your-kids-will-actually-eat</li>
-                <li>Capture the Atlas. (s. f.). <em>20 Platos de la Comida Típica de Costa Rica Imprescindibles</em>. https://capturetheatlas.com/es/comida-tipica-costa-rica/</li>
-                <li>Ministerio de Cultura y Juventud. (2005). <em>Cocina Tradicional Costarricense 1</em>. Patrimonio.go.cr. https://www.patrimonio.go.cr/biblioteca_digital/publicaciones/2005/cocina_tradicional_1.pdf</li>
-                <li>Universidad de Costa Rica. (2017, 28 marzo). <em>Nuevo libro recopila historias y leyendas costarricenses</em>. https://vinv.ucr.ac.cr/es/noticias/nuevo-libro-recopila-historias-y-leyendas-costarricenses</li>
-                <li>Wikipedia. (s. f.). <em>Leyendas de Costa Rica</em>. https://es.wikipedia.org/wiki/Leyendas_de_Costa_Rica</li>
+                <li>Jiménez, M. de J. (1840). <em>Las carreras de San Juan</em>. En <em>Obras poéticas</em>. San José, Costa Rica.</li>
+                <li>Quesada Soto, Á. (2010). <em>Historia de la literatura costarricense</em>. Editorial Universidad de Costa Rica.</li>
+                <li>Fernández Guardia, R. (1920). <em>Crónicas y anécdotas costarricenses</em>. Imprenta Lehmann.</li>
+                <li>Universidad de Costa Rica. (2023). <em>Romanticismo en Costa Rica</em>. https://letras.ucr.ac.cr/romanticismo</li>
             </ul>
+            <p><strong>Uso de IA:</strong> Este guion fue apoyado por Grok (xAI, 2025) para redacción y estructura académica.</p>
         </div>
     </div>
 
 </div>
 
 <footer>
-    <p>E-Portafolio Vivencial Grupal – Grupo C | UTN 2025 | <a href="#" class="text-white">Enlace compartido con docente</a></p>
+    <p>Noticiero Popular – Grupo C | Entrega: Semana 13 | Duración máxima: 20 min</p>
 </footer>
 
 <!-- Bootstrap 5 JS -->
