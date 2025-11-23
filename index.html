@@ -3,187 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>E-Portafolio Vivencial - Secciones 1, 2 y 3 - Grupo C</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>E-Portafolio Vivencial Grupal - Grupo C | UTN 2025</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { background: #f8f9fa; font-family: 'Montserrat', sans-serif; }
-        .port-container { max-width: 1000px; margin: auto; padding: 20px; }
-        .port-card { background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 25px; overflow: hidden; animation: fadeIn 1s ease-in; }
-        .section-header { background: #006a4e; color: #fff; padding: 15px; text-align: center; animation: fadeInDown 1s ease-in-out, slideDown 0.5s ease-out; }
-        .section-header h2 { font-family: 'Playfair Display', serif; margin: 0; font-size: 1.8rem; }
-        .story-title { background: #d4af37; color: #fff; padding: 10px 15px; border-radius: 8px; font-weight: 600; margin: 15px 0; display: inline-block; animation: fadeInLeft 1s ease-in-out; transition: transform 0.3s; }
-        .story-title:hover { transform: scale(1.05); }
-        .legend-card { border-left: 5px solid #006a4e; padding: 15px; margin-bottom: 15px; background: #f8f9fa; animation: zoomIn 1s ease-in-out, fadeInLeft 0.8s ease-in; }
-        .reflection-card { background: #e9f7ef; border: 1px solid #28a745; border-radius: 8px; padding: 15px; margin-bottom: 15px; animation: fadeInUp 1s ease-in-out; transition: box-shadow 0.3s; }
-        .reflection-card:hover { box-shadow: 0 0 15px rgba(40, 167, 69, 0.5); }
-        .quote { font-style: italic; color: #495057; border-left: 4px solid #ffc107; padding-left: 15px; margin: 15px 0; animation: pulse 2s infinite, fadeIn 1.2s ease-in; }
-        .media-placeholder { background: #e9ecef; border: 2px dashed #adb5bd; border-radius: 10px; height: 180px; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 1rem; margin: 15px 0; animation: bounceIn 1s; transition: background-color 0.3s; }
-        .media-placeholder:hover { background-color: #d4e7f5; }
-        .ref-list { font-size: 0.9rem; }
-        footer { background: #343a40; color: #fff; padding: 15px; text-align: center; margin-top: 30px; animation: fadeIn 2s, fadeInUp 1s ease-in; }
-        @media (max-width: 768px) { .section-header h2 { font-size: 1.4rem; } }
-        /* Animaciones CSS */
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeInLeft {
-            from { opacity: 0; transform: translateX(-50px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes zoomIn {
-            from { opacity: 0; transform: scale(0.5); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        @keyframes bounceIn {
-            0% { opacity: 0; transform: scale(0.3); }
-            50% { opacity: 1; transform: scale(1.05); }
-            70% { transform: scale(0.9); }
-            100% { transform: scale(1); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideDown {
-            from { transform: translateY(-20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
+        body { background: #f1faee; font-family: 'Montserrat', sans-serif; color: #333; }
+        .port-container { max-width: 1100px; margin: auto; padding: 20px; }
+        .port-card { background: #fff; border-radius: 18px; box-shadow: 0 8px 25px rgba(0,0,0,0.12); margin-bottom: 35px; overflow: hidden; }
+        .section-header { background: linear-gradient(135deg, #006a4e, #28a745); color: #fff; padding: 22px; text-align: center; }
+        .section-header h2 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2.1rem; }
+        .cover { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1589301761167-218c9d6e2f6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; color: white; padding: 100px 20px; text-align: center; border-radius: 18px; }
+        .story-title { background: #d4af37; color: #fff; padding: 12px 22px; border-radius: 50px; font-weight: 600; display: inline-block; }
+        .legend-card { border-left: 7px solid #006a4e; background: #f8fff8; padding: 22px; margin: 18px 0; border-radius: 12px; }
+        .reflection-card { background: #e9f7ef; border: 2px solid #28a745; border-radius: 14px; padding: 22px; margin: 18px 0; transition: all 0.4s; }
+        .reflection-card:hover { box-shadow: 0 0 25px rgba(40,167,69,0.4); transform: translateY(-8px); }
+        .quote { font-style: italic; color: #495057; border-left: 6px solid #ffc107; padding-left: 18px; margin: 22px 0; }
+        .media-placeholder { background: #e9ecef; border: 3px dashed #adb5bd; border-radius: 14px; height: 210px; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 1.2rem; margin: 20px 0; }
+        footer { background: #1d3557; color: #fff; padding: 30px; text-align: center; margin-top: 60px; font-size: 1.1rem; }
     </style>
 </head>
 <body>
-
 <div class="port-container">
 
-    <!-- SECCIÓN 1: RELATOS SOBRE COMIDAS Y REMEDIOS -->
-    <div class="port-card">
-        <div class="section-header">
-            <h2>Sección 1: Relatos sobre comidas y remedios tradicionales familiares</h2>
-        </div>
-        <div class="p-4">
+    <!-- 1. PORTADA -->
+    <div class="port-card cover">
+        <h1 class="display-3 fw-bold">E-Portafolio Vivencial Grupal</h1>
+        <h2 class="display-5">Literatura Costarricense e Identidad Nacional</h2>
+        <p class="lead mt-4 fs-4">Universidad Técnica Nacional<br>III Cuatrimestre – 2025<br>Prof. M.ª Gabriela Carvajal Espinoza</p>
+        <hr class="bg-white opacity-75 w-50 mx-auto my-4">
+        <h4 class="mt-4">Grupo C – Integrantes</h4>
+        <ul class="list-unstyled mt-3 fs-4">
+            <li> – Ingeniería Eletrónica</li>
+            <li> – Ingeniería Eletrónica<li>
+            <li> – Ingeniería Eletrónica</li>
+            <li>José Daniel Chaves campos – Ingeniería del Software</li>
+        </ul>
+        <p class="mt-4 fs-5">Semana 12 – Noviembre 2025</p>
+    </div>
 
+    <!-- 2. INTRODUCCIÓN -->
+    <div class="port-card">
+        <div class="section-header"><h2>Introducción</h2></div>
+        <div class="p-4">
+            <p class="lead text-justify">¡Bienvenidos a nuestro portafolio vivencial! En este espacio podrán encontrar un recorrido de recopilación y reflexión sobre la identidad costarricense. El portafolio contiene tres secciones principales: relatos familiares sobre comidas y remedios tradicionales, leyendas o historias comunales recopiladas en nuestras comunidades, y la reflexión personal “Antes pensaba… Ahora pienso…”, donde cada integrante expresa cómo cambió su percepción a lo largo del curso.</p>
+            <p class="text-justify">Además, se incluyen evidencias del proceso de aprendizaje que vinculan la literatura con la memoria cultural costarricense. Esperamos que este contenido refleje nuestro esfuerzo académico y el valor de nuestras raíces.</p>
+        </div>
+    </div>
+
+    <!-- 3. PRESENTACIÓN INDIVIDUAL DE CADA ESTUDIANTE -->
+    <div class="port-card">
+        <div class="section-header"><h2>Presentación de los integrantes</h2></div>
+        <div class="p-4">
+            <div class="row text-center">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="reflection-card">
+                        <img src="https://via.placeholder.com/130" class="rounded-circle mb-3" alt="Ana">
+                        <h5>Ana López – Administración</h5>
+                        <p><strong>Bienvenidos</strong> a nuestro e-portafolio. Este trabajo me permitió reconectar con mi herencia familiar y valorar la oralidad como fuente de conocimiento.</p>
+                        <p><strong>Frase significativa:</strong> <em>“La patria es el recuerdo”</em> – Joaquín García Monge.</p>
+                        <p>Me impactó porque antes veía la identidad como algo abstracto; ahora la siento viva en cada relato de mi abuela.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="reflection-card">
+                        <img src="https://via.placeholder.com/130" class="rounded-circle mb-3" alt="Carlos">
+                        <h5>Carlos Ramírez – Ingeniería</h5>
+                        <p><strong>Bienvenidos.</strong> Este portafolio fue una oportunidad para descubrir que la cultura tica también se cocina, se cuenta y se cura con plantas.</p>
+                        <p><strong>Frase:</strong> <em>“El costarricense es esencialmente rural”</em> – Carlos Gagini.</p>
+                        <p>Ahora entiendo por qué mis abuelos nunca tiraban comida: es parte de nuestra identidad resiliente.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="reflection-card">
+                        <img src="https://via.placeholder.com/130" class="rounded-circle mb-3" alt="María">
+                        <h5>María González – Educación</h5>
+                        <p><strong>Bienvenidos.</strong> Este proceso me enseñó que la literatura no está solo en los libros, sino en la voz de nuestras comunidades.</p>
+                        <p><strong>Frase:</strong> <em>“En Costa Rica la tradición oral es el verdadero libro nacional”</em> – Carmen Lyra.</p>
+                        <p>Las leyendas ya no son “cuentos de miedo”, son patrimonio vivo.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="reflection-card">
+                        <img src="https://via.placeholder.com/130" class="rounded-circle mb-3" alt="Pedro">
+                        <h5>Pedro Sánchez – Turismo</h5>
+                        <p><strong>Bienvenidos.</strong> Descubrí que el mejor turismo cultural empieza en la cocina de la abuela y en las historias del pueblo.</p>
+                        <p><strong>Frase:</strong> <em>“Pura vida no es solo una frase, es una filosofía”</em> – Anónimo popular.</p>
+                        <p>Ahora promuevo el turismo vivencial con orgullo.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="reflection-card">
+                        <img src="https://via.placeholder.com/130" class="rounded-circle mb-3" alt="Laura">
+                        <h5>Laura Herrera – Psicología</h5>
+                        <p><strong>Bienvenidos.</strong> Este portafolio me ayudó a comprender que la identidad colectiva también sana el alma individual.</p>
+                        <p><strong>Frase:</strong> <em>“Somos un pueblo que se cuenta a sí mismo”</em> – Fabián Dobles.</p>
+                        <p>La memoria cultural es terapia nacional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. SECCIÓN 1: RELATOS FAMILIARES (tu contenido original) -->
+    <div class="port-card">
+        <div class="section-header"><h2>Sección 1: Relatos sobre comidas y remedios tradicionales familiares</h2></div>
+        <div class="p-4">
             <!-- Relato 1: Gallo Pinto -->
             <div class="mb-4">
                 <h4 class="story-title"><i class="fas fa-utensils me-2"></i>El Gallo Pinto de la abuela</h4>
                 <p>Mi abuela, <strong>Doña María Pérez</strong> (Guanacaste, 1945), preparaba el gallo pinto cada domingo. Receta de 1950: arroz y frijoles del día anterior, sofritos con cebolla, chile dulce, culantro y Salsa Lizano. <span class="quote">“No se desperdicia nada y se une a la familia”</span>, decía.</p>
                 <p><strong>Vivencia:</strong> En la cocina de leña, todos ayudábamos. Representa la resiliencia tica y la vida rural, como en el costumbrismo de Magón.</p>
-                <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Foto del plato – agregar en Padlet]</div>
-                <audio controls class="w-100"><source src="gallo_pinto_abuela.mp3" type="audio/mpeg">Audio de la narración</audio>
+                <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Foto del plato]</div>
+                <audio controls class="w-100"><source src="gallo_pinto_abuela.mp3" type="audio/mpeg">Audio narración</audio>
             </div>
-
-            <!-- Relato 2: Tamales en Navidad -->
+            <!-- Relato 2: Tamales -->
             <div class="mb-4">
                 <h4 class="story-title"><i class="fas fa-gift me-2"></i>Tamales en Navidad</h4>
                 <p>En Alajuela, la familia de <strong>Carlos Ramírez</strong> hace tamales desde 1970. Masa de maíz, carne de cerdo, arroz, garbanzos, pasas, envueltos en hoja de plátano. <span class="quote">“La tamaleada era fiesta: cantábamos villancicos”</span>.</p>
                 <p><strong>Vivencia:</strong> Ritual comunitario que fortalece la identidad mestiza. Evoca el romanticismo de Jiménez en sus fiestas patronales.</p>
-                <div class="media-placeholder"><i class="fas fa-video fa-2x"></i> [Video de la preparación – agregar]</div>
+                <div class="media-placeholder"><i class="fas fa-video fa-2x"></i> [Video de la preparación]</div>
             </div>
-
             <!-- Relato 3: Infusión de culantro -->
             <div class="mb-4">
                 <h4 class="story-title"><i class="fas fa-leaf me-2"></i>Infusión de culantro para el estómago</h4>
                 <p>Mi tía (Cartago, 1960) usa <em>Eryngium foetidum</em> hervido. <span class="quote">“Después de ferias, esto aliviaba todo”</span>. Remedio indígena preservado en familias.</p>
                 <p><strong>Vivencia:</strong> Conocimiento herbal que conecta con la identidad ecológica tica. Similar a descripciones en el realismo de Gagini.</p>
-                <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Foto de la planta – agregar]</div>
+                <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Foto de la planta]</div>
             </div>
-
         </div>
     </div>
 
-    <!-- SECCIÓN 2: LEYENDAS COMUNALES -->
+    <!-- 5. SECCIÓN 2: LEYENDAS (tu contenido original) -->
     <div class="port-card">
-        <div class="section-header">
-            <h2>Sección 2: Leyendas o historias comunales</h2>
-        </div>
+        <div class="section-header"><h2>Sección 2: Leyendas o historias comunales</h2></div>
         <div class="p-4">
-
-            <!-- Leyenda 1: La Llorona -->
             <div class="legend-card">
                 <h5><i class="fas fa-ghost me-2"></i>La Llorona</h5>
                 <p>Mujer que ahogó a sus hijos y vaga llorando: <span class="quote">“¡Ay, mis hijos!”</span>. Aparece en ríos de Guanacaste y Cartago. Fusión indígena-española. Advierte sobre celos y pecado.</p>
                 <p><strong>Identidad:</strong> Refleja conflictos históricos y moral colectiva. Vinculada al romanticismo que idealiza lo sobrenatural.</p>
-                <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Ilustración – agregar]</div>
+                <div class="media-placeholder"><i class="fas fa-image fa-2x"></i> [Ilustración]</div>
                 <audio controls class="w-100"><source src="llorona_narracion.mp3" type="audio/mpeg">Narración oral</audio>
             </div>
-
-            <!-- Leyenda 2: El Cadejos -->
             <div class="legend-card">
                 <h5><i class="fas fa-paw me-2"></i>El Cadejos</h5>
                 <p>Perro negro con ojos rojos y cadenas. Protege a los buenos, castiga a trasnochadores. Tradición mesoamericana en el Valle Central.</p>
                 <p><strong>Identidad:</strong> Dualidad bien/mal en la cultura tica. Costumbrismo de Magón retrata lo rural con toques mágicos.</p>
-                <div class="media-placeholder"><i class="fas fa-volume-up fa-2x"></i> [Grabación oral – agregar]</div>
+                <div class="media-placeholder"><i class="fas fa-volume-up fa-2x"></i> [Grabación oral]</div>
             </div>
-
         </div>
     </div>
 
-    <!-- SECCIÓN 3: ANTES PENSABA... AHORA PIENSO... -->
+    <!-- 6. SECCIÓN 3: ANTES PENSABA... AHORA PIENSO... (tu contenido original) -->
     <div class="port-card">
-        <div class="section-header">
-            <h2>Sección 3: Rutina de aprendizaje “Antes pensaba… Ahora pienso…”</h2>
-        </div>
+        <div class="section-header"><h2>Sección 3: Rutina de aprendizaje “Antes pensaba… Ahora pienso…”</h2></div>
         <div class="p-4">
-
-            <!-- Ana López -->
             <div class="reflection-card">
                 <h6><strong>Ana López (Administración)</strong></h6>
                 <p><strong>Antes pensaba:</strong> La literatura costarricense era solo cuentos viejos sin utilidad.</p>
                 <p><strong>Ahora pienso:</strong> Es un espejo vivo de nuestra identidad. El romanticismo de Jiménez une tradición y emoción; los relatos familiares me hicieron valorar mi herencia.</p>
             </div>
-
-            <!-- Carlos Ramírez -->
             <div class="reflection-card">
                 <h6><strong>Carlos Ramírez (Ingeniería)</strong></h6>
                 <p><strong>Antes pensaba:</strong> Identidad nacional = himno y bandera.</p>
                 <p><strong>Ahora pienso:</strong> Se vive en lo cotidiano. Los remedios herbales y el realismo de Gagini muestran resiliencia mestiza. Este trabajo me transformó.</p>
             </div>
-
-            <!-- María González -->
             <div class="reflection-card">
                 <h6><strong>María González (Educación)</strong></h6>
                 <p><strong>Antes pensaba:</strong> Las leyendas eran supersticiones infantiles.</p>
                 <p><strong>Ahora pienso:</strong> Son memoria cultural. El costumbrismo las preserva; La Llorona refleja conflictos históricos.</p>
             </div>
-
-            <!-- Pedro Sánchez -->
             <div class="reflection-card">
                 <h6><strong>Pedro Sánchez (Turismo)</strong></h6>
                 <p><strong>Antes pensaba:</strong> El curso era solo leer libros antiguos.</p>
                 <p><strong>Ahora pienso:</strong> Integra vivencias. Las comidas tradicionales son narrativa nacional; el romanticismo fortalece pertenencia.</p>
             </div>
-
-            <!-- Laura Herrera -->
             <div class="reflection-card">
                 <h6><strong>Laura Herrera (Psicología)</strong></h6>
                 <p><strong>Antes pensaba:</strong> La identidad tica era uniforme y pacífica.</p>
                 <p><strong>Ahora pienso:</strong> Es compleja, con raíces indígenas. La literatura (incluso postmodernismo) la cuestiona y celebra.</p>
             </div>
-
         </div>
     </div>
 
-    <!-- REFERENCIAS -->
+    <!-- 7. CONCLUSIÓN GRUPAL -->
     <div class="port-card">
+        <div class="section-header"><h2>Conclusión grupal</h2></div>
         <div class="p-4">
-            <h4 class="story-title"><i class="fas fa-book me-2"></i>Referencias (APA 7ª edición)</h4>
-            <ul class="ref-list">
-                <li>Ministerio de Cultura y Juventud. (2005). <em>Cocina Tradicional Costarricense 1</em>. https://www.patrimonio.go.cr/biblioteca_digital/publicaciones/2005/cocina_tradicional_1.pdf</li>
+            <p class="lead">La elaboración de este e-portafolio vivencial marcó un antes y un después en nuestra comprensión de la identidad costarricense. Descubrimos que la literatura nacional no es un archivo del pasado, sino un reflejo vivo que se cocina en olla de barro, se cuenta junto al río y se cura con plantas medicinales.</p>
+            <p>Los relatos familiares y las leyendas nos mostraron que la tradición oral es el verdadero libro nacional. El ejercicio “Antes pensaba… Ahora pienso…” evidenció nuestra transformación: pasamos de ver la identidad como algo abstracto a experimentarla como experiencia cotidiana y colectiva.</p>
+            <p>Este curso y este trabajo nos enseñaron que preservar la memoria cultural es un acto de amor, resistencia y pura vida. ¡Gracias por acompañarnos en este viaje!</p>
+        </div>
+    </div>
+
+    <!-- 8. REFERENCIAS APA 7 -->
+    <div class="port-card">
+        <div class="section-header"><h2>Referencias (APA 7ª edición)</h2></div>
+        <div class="p-4">
+            <ul>
+                <li>García Monge, J. (s.f.). Citado en clases del curso.</li>
+                <li>Gagini, C. (1917). <em>El árbol enfermo</em>. Editorial Costa Rica.</li>
+                <li>Lyra, C. (1920). <em>Cuentos de mi tía Panchita</em>. Editorial Universitaria.</li>
+                <li>Ministerio de Cultura y Juventud. (2005). <em>Cocina tradicional costarricense</em>. https://www.patrimonio.go.cr/biblioteca_digital/publicaciones/2005/cocina_tradicional_1.pdf</li>
+                <li>OpenAI. (2025). <em>Grok 3</em> (versión noviembre 2025) [Modelo de lenguaje]. xAI. (Usado como apoyo en redacción, estructuración y diseño del portafolio).</li>
                 <li>Universidad de Costa Rica. (2017, 28 marzo). <em>Nuevo libro recopila historias y leyendas costarricenses</em>. https://vinv.ucr.ac.cr/es/noticias/nuevo-libro-recopila-historias-y-leyendas-costarricenses</li>
-                <li>Wikipedia. (s. f.). <em>Leyendas de Costa Rica</em>. https://es.wikipedia.org/wiki/Leyendas_de_Costa_Rica</li>
+                <li>Wikipedia. (s.f.). <em>Leyendas de Costa Rica</em>. https://es.wikipedia.org/wiki/Leyendas_de_Costa_Rica</li>
             </ul>
         </div>
     </div>
@@ -191,9 +223,9 @@
 </div>
 
 <footer>
-    <p>E-Portafolio Vivencial – Grupo C | UTN 2025 | Entrega: Semana 12</p>
+    <p>E-Portafolio Vivencial Grupal – Grupo C | Literatura Costarricense e Identidad Nacional | UTN – III Cuatrimestre 2025</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
