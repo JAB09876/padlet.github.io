@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,279 +8,573 @@
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { background: #f1faee; font-family: 'Montserrat', sans-serif; color: #333; }
-        .port-container { max-width: 1100px; margin: auto; padding: 20px; }
-        .port-card { background: #fff; border-radius: 18px; box-shadow: 0 8px 25px rgba(0,0,0,0.12); margin-bottom: 35px; overflow: hidden; }
-        .section-header { background: linear-gradient(135deg, #006a4e, #28a745); color: #fff; padding: 22px; text-align: center; }
-        .section-header h2 { font-family: 'Playfair Display', serif; margin: 0; font-size: 2.1rem; }
-        .cover { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1589301761167-218c9d6e2f6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; color: white; padding: 100px 20px; text-align: center; border-radius: 18px; }
-        .story-title { background: #d4af37; color: #fff; padding: 12px 22px; border-radius: 50px; font-weight: 600; display: inline-block; }
-        .legend-card { border-left: 7px solid #006a4e; background: #f8fff8; padding: 22px; margin: 18px 0; border-radius: 12px; }
-        .reflection-card { background: #e9f7ef; border: 2px solid #28a745; border-radius: 14px; padding: 22px; margin: 18px 0; transition: all 0.4s; }
-        .reflection-card:hover { box-shadow: 0 0 25px rgba(40,167,69,0.4); transform: translateY(-8px); }
-        .quote { font-style: italic; color: #495057; border-left: 6px solid #ffc107; padding-left: 18px; margin: 22px 0; }
-        .media-placeholder { background: #e9ecef; border: 3px dashed #adb5bd; border-radius: 14px; height: 210px; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 1.2rem; margin: 20px 0; }
-        footer { background: #1d3557; color: #fff; padding: 30px; text-align: center; margin-top: 60px; font-size: 1.1rem; }
+        body {
+            background: #f1faee;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+        }
+
+        .port-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .port-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            margin-bottom: 35px;
+            overflow: hidden;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #006a4e, #28a745);
+            color: #fff;
+            padding: 22px;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            font-size: 2.1rem;
+        }
+
+        .cover {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1589301761167-218c9d6e2f6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-radius: 18px;
+        }
+
+        .story-title {
+            background: #d4af37;
+            color: #fff;
+            padding: 12px 22px;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .legend-card {
+            border-left: 7px solid #006a4e;
+            background: #f8fff8;
+            padding: 22px;
+            margin: 18px 0;
+            border-radius: 12px;
+        }
+
+        .reflection-card {
+            background: #e9f7ef;
+            border: 2px solid #28a745;
+            border-radius: 14px;
+            padding: 22px;
+            margin: 18px 0;
+            transition: all 0.4s;
+        }
+
+        .reflection-card:hover {
+            box-shadow: 0 0 25px rgba(40, 167, 69, 0.4);
+            transform: translateY(-8px);
+        }
+
+        .quote {
+            font-style: italic;
+            color: #495057;
+            border-left: 6px solid #ffc107;
+            padding-left: 18px;
+            margin: 22px 0;
+        }
+
+        .media-placeholder {
+            background: #e9ecef;
+            border: 3px dashed #adb5bd;
+            border-radius: 14px;
+            height: 210px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #1d3557;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 1.1rem;
+        }
     </style>
 </head>
+
 <body>
-<div class="port-container">
+    <div class="port-container">
 
-    <!-- 1. PORTADA -->
-    <div class="port-card cover">
-        <h1 class="display-3 fw-bold">E-Portafolio Vivencial Grupal</h1>
-        <h2 class="display-5">Literatura Costarricense e Identidad Nacional</h2>
-        <p class="lead mt-4 fs-4">Universidad Técnica Nacional<br>III Cuatrimestre – 2025<br>Prof. M.ª Gabriela Carvajal Espinoza</p>
-        <hr class="bg-white opacity-75 w-50 mx-auto my-4">
-        <h4 class="mt-4">Grupo C – Integrantes</h4>
-        <ul class="list-unstyled mt-3 fs-4">
-            <li>Emely Alfaro Espinoza – Ingeniería Eletrónica</li>
-            <li>Karina Matarrita Obando – Ingeniería Eletrónica<li>
-            <li> – Ingeniería Eletrónica</li>
-            <li>José Daniel Chaves campos – Ingeniería del Software</li>
-        </ul>
-        <p class="mt-4 fs-5">Semana 12 – Noviembre 2025</p>
-    </div>
-
-    <!-- 2. INTRODUCCIÓN -->
-    <div class="port-card">
-        <div class="section-header"><h2>Introducción</h2></div>
-        <div class="p-4">
-            <p class="lead text-justify">¡Bienvenidos a nuestro portafolio vivencial! En este espacio podrán encontrar un recorrido de recopilación y reflexión sobre la identidad costarricense. El portafolio contiene tres secciones principales: relatos familiares sobre comidas y remedios tradicionales, leyendas o historias comunales recopiladas en nuestras comunidades, y la reflexión personal “Antes pensaba… Ahora pienso…”, donde cada integrante expresa cómo cambió su percepción a lo largo del curso.</p>
-            <p class="text-justify">Además, se incluyen evidencias del proceso de aprendizaje que vinculan la literatura con la memoria cultural costarricense. Esperamos que este contenido refleje nuestro esfuerzo académico y el valor de nuestras raíces.</p>
+        <!-- 1. PORTADA -->
+        <div class="port-card cover">
+            <h1 class="display-3 fw-bold">E-Portafolio Vivencial Grupal</h1>
+            <h2 class="display-5">Literatura Costarricense e Identidad Nacional</h2>
+            <p class="lead mt-4 fs-4">Universidad Técnica Nacional<br>III Cuatrimestre – 2025<br>Prof. M.ª Gabriela
+                Carvajal Espinoza</p>
+            <hr class="bg-white opacity-75 w-50 mx-auto my-4">
+            <h4 class="mt-4">Grupo C – Integrantes</h4>
+            <ul class="list-unstyled mt-3 fs-4">
+                <li>Emely Alfaro Espinoza – Ingeniería Eletrónica</li>
+                <li>Karina Matarrita Obando – Ingeniería Eletrónica
+                <li>
+                <li> – Ingeniería Eletrónica</li>
+                <li>José Daniel Chaves campos – Ingeniería del Software</li>
+            </ul>
+            <p class="mt-4 fs-5">Semana 12 – Noviembre 2025</p>
         </div>
-    </div>
 
-    <!-- 3. PRESENTACIÓN INDIVIDUAL DE CADA ESTUDIANTE -->
-    <div class="port-card">
-        <div class="section-header"><h2>Presentación de los integrantes</h2></div>
-        <div class="p-4">
-            <div class="row text-center">
+        <!-- 2. INTRODUCCIÓN -->
+        <div class="port-card">
+            <div class="section-header">
+                <h2>Introducción</h2>
+            </div>
+            <div class="p-4">
+                <p class="lead text-justify">¡Bienvenidos a nuestro portafolio vivencial! En este espacio podrán
+                    encontrar un recorrido de recopilación y reflexión sobre la identidad costarricense. El portafolio
+                    contiene tres secciones principales: relatos familiares sobre comidas y remedios tradicionales,
+                    leyendas o historias comunales recopiladas en nuestras comunidades, y la reflexión personal “Antes
+                    pensaba… Ahora pienso…”, donde cada integrante expresa cómo cambió su percepción a lo largo del
+                    curso.</p>
+                <p class="text-justify">Además, se incluyen evidencias del proceso de aprendizaje que vinculan la
+                    literatura con la memoria cultural costarricense. Esperamos que este contenido refleje nuestro
+                    esfuerzo académico y el valor de nuestras raíces.</p>
+            </div>
+        </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="reflection-card">
-                        <h5>Emely Alfaro Espinoza – Ingeniería Eletrónica/h5>
-                        <p><strong>Bienvenidos</strong> a nuestro e-portafolio. Este trabajo me permitió reconectar con mi herencia familiar y valorar la oralidad como fuente de conocimiento.</p>
-                        <p><strong>Frase significativa:</strong> <em>“La patria es el recuerdo”</em> – Joaquín García Monge.</p>
-                        <p>Me impactó porque antes veía la identidad como algo abstracto; ahora la siento viva en cada relato de mi abuela.</p>
+        <!-- 3. PRESENTACIÓN INDIVIDUAL DE CADA ESTUDIANTE -->
+        <div class="port-card">
+            <div class="section-header">
+                <h2>Presentación de los integrantes</h2>
+            </div>
+            <div class="p-4">
+                <div class="row text-center">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="reflection-card text-center">
+                            <h5 class="mb-3">Emely Alfaro Espinoza</h5>
+                            <p class="small text-muted mb-3">Ingeniería Electrónica – UTN</p>
+
+                            <div class="px-3">
+                                <p class="lead fw-bold text-success mb-3">¡Bienvenidos a nuestro portafolio!</p>
+
+                                <p>Soy Emely Alfaro E estudiante de la carrera Ingeniería Electrónica.
+                                    Espero que sea un espacio dónde puedan aprender nuevas cosas y recordar algunas
+                                    otras.
+                                    De las lecturas realizas durante este curso rescato esta cita de la obra La isla que
+                                    somos</p>
+
+                                <div class="quote bg-light p-3 rounded my-4 border-start border-success border-5">
+                                    “Un pueblo sin héroes, y que si alcanza a tenerlos, los destruye o los olvida, que
+                                    es otro modo de destruir”
+                                    <br><small class="text-muted">— Isaac Felipe Azofeifa, <em>La isla que somos</em>
+                                        (1970, p. 2)</small>
+                                </div>
+
+                                <p>Ya que la relaciono con la experiencia vivida durante la búsqueda de las leyendas,
+                                    recetas y remedios caseros que en mi vida he probado o escuchado, ya que hacer este
+                                    ejercicio de recordarlos me hace no querer olvidarlos porque son parte de la persona
+                                    que soy y de mis antepasados que con cariño replicaban un remedio para que yo
+                                    estuviera bien o me contaban leyendas con alegría y entusiasmo, envolviéndome en la
+                                    historia; así que si esto es lo único que tenemos para seguir recordándolos a ellos
+                                    y por ende el ser costarricense no quiero olvidarlo.</p>
+                            </div>
+
+                            <hr class="my-4">
+                            <p class="small text-success"><em>Gracias por visitar nuestro rincón de pura vida</em> 🇨🇷
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="reflection-card">
-                         <li>Karina Matarrita Obando – Ingeniería Eletrónica<li>
-                        <p><strong>Bienvenidos.</strong> Este portafolio fue una oportunidad para descubrir que la cultura tica también se cocina, se cuenta y se cura con plantas.</p>
-                        <p><strong>Frase:</strong> <em>“El costarricense es esencialmente rural”</em> – Carlos Gagini.</p>
-                        <p>Ahora entiendo por qué mis abuelos nunca tiraban comida: es parte de nuestra identidad resiliente.</p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="reflection-card">
+                            <li>Karina Matarrita Obando – Ingeniería Eletrónica
+                            <li>
+                                <p><strong>Bienvenidos.</strong> Este portafolio fue una oportunidad para descubrir que
+                                    la cultura tica también se cocina, se cuenta y se cura con plantas.</p>
+                                <p><strong>Frase:</strong> <em>“El costarricense es esencialmente rural”</em> – Carlos
+                                    Gagini.</p>
+                                <p>Ahora entiendo por qué mis abuelos nunca tiraban comida: es parte de nuestra
+                                    identidad resiliente.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="reflection-card">
-                        <h5> – </h5>
-                        <p><strong>Bienvenidos.</strong> Este proceso me enseñó que la literatura no está solo en los libros, sino en la voz de nuestras comunidades.</p>
-                        <p><strong>Frase:</strong> <em>“En Costa Rica la tradición oral es el verdadero libro nacional”</em> – Carmen Lyra.</p>
-                        <p>Las leyendas ya no son “cuentos de miedo”, son patrimonio vivo.</p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="reflection-card">
+                            <h5> – </h5>
+                            <p><strong>Bienvenidos.</strong> Este proceso me enseñó que la literatura no está solo en
+                                los libros, sino en la voz de nuestras comunidades.</p>
+                            <p><strong>Frase:</strong> <em>“En Costa Rica la tradición oral es el verdadero libro
+                                    nacional”</em> – Carmen Lyra.</p>
+                            <p>Las leyendas ya no son “cuentos de miedo”, son patrimonio vivo.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-6 col-md-6 mb-4">
-                    <div class="reflection-card">
-                        <h5>José Daniel Chaves campos – Ingeniería del Software</h5>
-                        <p><strong>Bienvenidos.</strong> Este portafolio me ayudó a comprender que la identidad colectiva también sana el alma individual.</p>
-                        <p><strong>Frase:</strong> <em>“Somos un pueblo que se cuenta a sí mismo”</em> – Fabián Dobles.</p>
-                        <p>La memoria cultural es terapia nacional.</p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="reflection-card text-center">
+                            <h5 class="mb-3">José Daniel Chaves Campos</h5>
+                            <p class="small text-muted mb-3">Ingeniería del Software – UTN</p>
+
+                            <div class="px-3">
+                                <p class="lead fw-bold text-success mb-3">¡Bienvenidos a nuestro portafolio!</p>
+
+                                <p>Soy José Daniel, estudiante de Ingeniería del Software. Este curso me llevó a
+                                    descubrir que la identidad costarricense no solo se estudia, sino que también se
+                                    construye colaborando para que las historias de nuestras familias y comunidades
+                                    lleguen a más personas.</p>
+
+                                <div class="quote bg-light p-3 rounded my-4 border-start border-success border-5">
+                                    “El costarricense no es el que nace en Costa Rica, sino el que cada día se hace
+                                    costarricense recordando de dónde viene”
+                                    <br><small class="text-muted">— Rodrigo Facio Brenes (1942), adaptado de sus
+                                        discursos sobre la identidad nacional costarricense</small>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+                            <p class="small text-success"><em>Gracias por visitar nuestro rincón de pura vida</em> 🇨🇷
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
         <!-- 4. SECCIÓN 1: RELATOS FAMILIARES CON IMÁGENES REALES -->
-    <div class="port-card">
-        <div class="section-header"><h2>Sección 1: Relatos sobre comidas y remedios tradicionales familiares</h2></div>
-        <div class="p-4">
+        <div class="port-card">
+            <div class="section-header">
+                <h2>Sección 1: Relatos sobre comidas y remedios tradicionales familiares</h2>
+            </div>
+            <div class="p-4">
 
-                        <!-- Relato: Remedio casero contra flemas (leche con malvaviscos) -->
-            <div class="mb-5">
-                <h4 class="story-title"><i class="fas fa-mug-hot me-2"></i>Remedio casero contra flemas y tos con leche y malvaviscos</h4>
-                
-                <p>Mi mamá y mi tía (San Carlos, años 80-90) siempre usaban este remedio cuando teníamos tos con flemas o dolor de garganta. Es súper conocido en el campo tico y lo aprendieron de mi bisabuela.</p>
-                
-                <p><strong>Receta tradicional:</strong><br>
-                • 1 taza de leche entera (preferiblemente fresca de vaca)<br>
-                • 3 malvaviscos (marshmallows blancos)<br><br>
-                <strong>Procedimiento:</strong><br>
-                1. Calentar la leche hasta que hierva.<br>
-                2. Bajar el fuego y agregar los 3 malvaviscos.<br>
-                3. Revolver hasta que se derritan por completo (se forma una capa viscosa).<br>
-                4. Dejar entibiar un poco y tomar caliente antes de dormir.<br><br>
-                <span class="quote">“Esto ablanda las flemas y calma la tos en una noche”</span>, decía mi mamá.</p>
+                <!-- Relato: Remedio casero contra flemas (leche con malvaviscos) -->
+                <div class="mb-5">
+                    <h4 class="story-title"><i class="fas fa-mug-hot me-2"></i>Remedio casero contra flemas y tos con
+                        leche y malvaviscos</h4>
 
-                <p><strong>Vivencia:</strong> De niño lo odiaba por el sabor raro, pero funcionaba mágicamente. Representa el ingenio popular costarricense: usar lo que hay en la casa (leche de la finca y dulces del pulpe) para curar. Es parte del saber campesino que pasa de boca en boca, como los remedios que aparecen en los cuentos de Carmen Lyra o en el realismo rural de Carlos Luis Fallas.</p>
-
-                <!-- IMAGEN REAL Y BONITA -->
-                <div class="text-center my-4">
-                    <img src="imagen2.jpg" 
-                         class="img-fluid rounded shadow-lg" 
-                         alt="Leche caliente con malvaviscos derretidos – remedio casero tico contra la tos" 
-                         style="max-height: 440px; border: 4px solid #fff;">
-                    <p class="text-muted small mt-3 fst-italic">
-                        Leche caliente con malvaviscos derretidos – remedio tradicional costarricense contra flemas y tos fuerte
+                    <p>Mi mamá y mi tía (San Carlos, años 80-90) siempre usaban este remedio cuando teníamos tos con
+                        flemas o dolor de garganta. Es súper conocido en el campo tico y lo aprendieron de mi bisabuela.
                     </p>
-                </div>
-            </div>
 
-            <!-- Relato 2: Tamales en Navidad -->
-            <div class="mb-5">
-                <h4 class="story-title"><i class="fas fa-gift me-2"></i>Infusión de hojas de guayabo para aliviar dolores de estómago</h4>
-                <p>Para preparar este remedio natural solo se necesita 3 o 4 hojas de guayabo, provenientes del mismo árbol de donde se obtienen las guayabas que solemos consumir con sal o en jalea. Calienta agua hasta que alcance el punto de ebullición. Coloca las hojas de guayabo en una taza, vierte el agua hirviendo sobre ellas y cubre la taza con un platito para conservar el calor. Deja reposar unos minutos y bebe la infusión tibia. En menos de 20 minutos, sentirás alivio para cualquier dolor de estómago.</p>
-                <p><strong>Vivencia:</strong> Ritual comunitario que fortalece la identidad mestiza. Evoca el romanticismo de Jiménez en sus fiestas patronales.</p>
-                
-                <div class="text-center my-4">
-                    <img src="imagen3.jpg" class="img-fluid rounded shadow" alt="Tamales costarricenses navideños" style="max-height: 420px;">
-                    <p class="text-muted small mt-2">Hojas de guayabo</p>
-                </div>
-            </div>
+                    <p><strong>Receta tradicional:</strong><br>
+                        • 1 taza de leche entera (preferiblemente fresca de vaca)<br>
+                        • 3 malvaviscos (marshmallows blancos)<br><br>
+                        <strong>Procedimiento:</strong><br>
+                        1. Calentar la leche hasta que hierva.<br>
+                        2. Bajar el fuego y agregar los 3 malvaviscos.<br>
+                        3. Revolver hasta que se derritan por completo (se forma una capa viscosa).<br>
+                        4. Dejar entibiar un poco y tomar caliente antes de dormir.<br><br>
+                        <span class="quote">“Esto ablanda las flemas y calma la tos en una noche”</span>, decía mi mamá.
+                    </p>
 
-            <!-- Relato 3: Infusión de culantro -->
-            <div class="mb-5">
-                <h4 class="story-title"><i class="fas fa-gift me-2"></i>Tamales en Navidad</h4>
-                <p>En Alajuela, la familia de <strong>Carlos Ramírez</strong> hace tamales desde 1970. Masa de maíz, carne de cerdo, arroz, garbanzos, pasas, envueltos en hoja de plátano. <span class="quote">“La tamaleada era fiesta: cantábamos villancicos”</span>.</p>
-                <p><strong>Vivencia:</strong> Ritual comunitario que fortalece la identidad mestiza. Evoca el romanticismo de Jiménez en sus fiestas patronales.</p>
-                
-                <div class="text-center my-4">
-                    <img src="https://images.pexels.com/photos/7771920/pexels-photo-7771920.jpeg?w=900&auto=format&fit=crop" class="img-fluid rounded shadow" alt="Tamales costarricenses navideños" style="max-height: 420px;">
-                    <p class="text-muted small mt-2">Tamales envueltos en hoja de plátano – tradición navideña costarricense</p>
-                </div>
-            </div>
+                    <p><strong>Vivencia:</strong> De niño lo odiaba por el sabor raro, pero funcionaba mágicamente.
+                        Representa el ingenio popular costarricense: usar lo que hay en la casa (leche de la finca y
+                        dulces del pulpe) para curar. Es parte del saber campesino que pasa de boca en boca, como los
+                        remedios que aparecen en los cuentos de Carmen Lyra o en el realismo rural de Carlos Luis
+                        Fallas.</p>
 
+                    <!-- IMAGEN REAL Y BONITA -->
+                    <div class="text-center my-4">
+                        <img src="imagen2.jpg" class="img-fluid rounded shadow-lg"
+                            alt="Leche caliente con malvaviscos derretidos – remedio casero tico contra la tos"
+                            style="max-height: 440px; border: 4px solid #fff;">
+                        <p class="text-muted small mt-3 fst-italic">
+                            Leche caliente con malvaviscos derretidos – remedio tradicional costarricense contra flemas
+                            y tos fuerte
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Relato 2: Tamales en Navidad -->
+                <div class="mb-5">
+                    <h4 class="story-title"><i class="fas fa-gift me-2"></i>Infusión de hojas de guayabo para aliviar
+                        dolores de estómago</h4>
+                    <p>Para preparar este remedio natural solo se necesita 3 o 4 hojas de guayabo, provenientes del
+                        mismo árbol de donde se obtienen las guayabas que solemos consumir con sal o en jalea. Calienta
+                        agua hasta que alcance el punto de ebullición. Coloca las hojas de guayabo en una taza, vierte
+                        el agua hirviendo sobre ellas y cubre la taza con un platito para conservar el calor. Deja
+                        reposar unos minutos y bebe la infusión tibia. En menos de 20 minutos, sentirás alivio para
+                        cualquier dolor de estómago.</p>
+                    <p><strong>Vivencia:</strong> Ritual comunitario que fortalece la identidad mestiza. Evoca el
+                        romanticismo de Jiménez en sus fiestas patronales.</p>
+
+                    <div class="text-center my-4">
+                        <img src="imagen3.jpg" class="img-fluid rounded shadow" alt="Tamales costarricenses navideños"
+                            style="max-height: 420px;">
+                        <p class="text-muted small mt-2">Hojas de guayabo</p>
+                    </div>
+                </div>
+
+                <!-- Relato: Prestiños tradicionales costarricenses -->
+                <!-- Relato 4: Prestiños tradicionales costarricenses -->
+                <div class="mb-5">
+                    <h4 class="story-title"><i class="fas fa-cookie-bite me-2"></i>Prestiños tradicionales
+                        costarricenses</h4>
+
+                    <p><strong>Receta tradicional</strong></p>
+
+                    <p><strong>Ingredientes (para 20-25 prestiños):</strong><br>
+                        • 2 tazas de harina de trigo<br>
+                        • 1/4 taza de azúcar morena<br>
+                        • 1/2 taza de manteca de cerdo (o mantequilla)<br>
+                        • 1 huevo<br>
+                        • 1/4 taza de agua tibia (o leche)<br>
+                        • 1/2 cucharadita de polvo de hornear<br>
+                        • Pizca de sal<br>
+                        • Esencia de anís o canela al gusto (opcional)<br>
+                        • Aceite para freír<br>
+                        • 1 taza de miel de caña o panela derretida para bañar</p>
+
+                    <p><strong>Procedimiento:</strong><br>
+                        1. En un bowl, mezcla la harina, azúcar, polvo de hornear y sal.<br>
+                        2. Incorpora la manteca fría con los dedos hasta obtener una textura arenosa.<br>
+                        3. Agrega el huevo batido y el agua tibia poco a poco, amasando hasta formar una bola suave (no
+                        amases demasiado).<br>
+                        4. Envuelve en plástico y deja reposar 20-30 minutos.<br>
+                        5. Estira la masa fina (2-3 mm), corta en tiras o rombos y fríe en aceite caliente (180°C) hasta
+                        dorar (1-2 minutos por lado).<br>
+                        6. Escurre en papel absorbente y baña inmediatamente en miel caliente. Deja enfriar en rejilla.
+                    </p>
+
+                    <p><strong>Vínculo con la identidad:</strong> Dulce frito típico de la Navidad costarricense,
+                        especialmente en Guanacaste. Simboliza la fusión mestiza (harina española + miel indígena) y
+                        aparece en relatos costumbristas como los de Adolfo Herrera García, evocando fiestas rurales y
+                        tradición oral.</p>
+
+                    <!-- IMAGEN DE PRESTIÑOS -->
+                    <div class="text-center my-4">
+                        <img src="https://nacarina.com/wp-content/uploads/2013/09/prestinos.jpg"
+                            class="img-fluid rounded shadow-lg"
+                            alt="Prestiños fritos dorados apilados en plato, cubiertos de miel de caña, con fondo rústico de mesa de madera"
+                            style="max-height: 420px; border: 4px solid #fff;">
+                        <p class="text-muted small mt-2">
+                            Prestiños fritos tradicionales, listos para la Navidad costarricense<br>
+                            <small>Fuente: Nacarina. (2013). <em>Prestiños</em> [Fotografía].
+                                https://nacarina.com/wp-content/uploads/2013/09/prestinos.jpg</small>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
 
-    <!-- 5. SECCIÓN 2: LEYENDAS (con formato mejorado: títulos, historias y imágenes reales) -->
-<div class="port-card">
-    <div class="section-header"><h2>Sección 2: Leyendas o historias comunales</h2></div>
-    <div class="p-4">
-
-        <!-- Leyenda 1: El Puente de Piedra -->
-        <div class="legend-card mb-5">
-            <h4 class="story-title mb-3"><i class="fas fa-bridge-water me-2"></i>El Puente de Piedra</h4>
-            
-            <p class="lead">Se cuenta que en el tiempo de las carretas, un campesino de la zona de Grecia, Alajuela, tenía su casa al otro lado del cañón del Río Poró. La profundidad era tal que debía recorrer más de medio día río abajo para cruzarlo y llegar al pueblo.</p>
-            
-            <p>Una noche, al devolverse del pueblo a su casa, se paró frente al cañón e invocó al Pisuicas (el Diablo). Le prometió su alma a cambio de que le construyera un puente antes de que cantara el gallo. El Pisuicas estuvo de acuerdo y, estrechándose las manos, comenzó a trabajar a velocidad infernal: las piedras volaban y se acomodaban solas. Trabajaba tan rápido que casi no se veía. Cuando solo le faltaba una piedra para colocar, el campesino sacó de la carreta un saco que contenía un gallo dentro, lo pateó y el gallo cantó. Así salvó su alma, y el puente quedó inconcluso, con esa piedra faltante que aún se ve hoy.</p>
-            
-            <span class="quote">“El Diablo construye rápido, pero el tico es más vivo”</span> – dice la tradición oral.</p>
-
-            <p><strong>Vínculo con la identidad costarricense:</strong> Esta leyenda refleja el ingenio campesino tico y la moral colectiva contra el mal, con toques de sincretismo indígena-español. Es un clásico del romanticismo costarricense, similar a los cuentos de Aquileo J. Echeverría, donde el humano engaña al sobrenatural.</p>
-
-            <!-- IMAGEN REAL DEL PUENTE DE PIEDRA -->
-            <div class="text-center my-4">
-                <img src="imagen1.jpg" 
-                     class="img-fluid rounded shadow-lg" 
-                     alt="Puente de Piedra en Grecia, Alajuela – formación natural con la piedra faltante de la leyenda" 
-                     style="max-height: 400px; border: 4px solid #fff;">
-                <p class="text-muted small mt-3 fst-italic">Puente de Piedra en Grecia, Alajuela – la piedra faltante que el Diablo no pudo colocar (Foto histórica, 1851-1900)</p>
+        <!-- 5. SECCIÓN 2: LEYENDAS (con formato mejorado: títulos, historias y imágenes reales) -->
+        <div class="port-card">
+            <div class="section-header">
+                <h2>Sección 2: Leyendas o historias comunales</h2>
             </div>
-        </div>
+            <div class="p-4">
+
+                <!-- Leyenda 1: El Puente de Piedra -->
+                <div class="legend-card mb-5">
+                    <h4 class="story-title mb-3"><i class="fas fa-bridge-water me-2"></i>El Puente de Piedra</h4>
+
+                    <p class="lead">Se cuenta que en el tiempo de las carretas, un campesino de la zona de Grecia,
+                        Alajuela, tenía su casa al otro lado del cañón del Río Poró. La profundidad era tal que debía
+                        recorrer más de medio día río abajo para cruzarlo y llegar al pueblo.</p>
+
+                    <p>Una noche, al devolverse del pueblo a su casa, se paró frente al cañón e invocó al Pisuicas (el
+                        Diablo). Le prometió su alma a cambio de que le construyera un puente antes de que cantara el
+                        gallo. El Pisuicas estuvo de acuerdo y, estrechándose las manos, comenzó a trabajar a velocidad
+                        infernal: las piedras volaban y se acomodaban solas. Trabajaba tan rápido que casi no se veía.
+                        Cuando solo le faltaba una piedra para colocar, el campesino sacó de la carreta un saco que
+                        contenía un gallo dentro, lo pateó y el gallo cantó. Así salvó su alma, y el puente quedó
+                        inconcluso, con esa piedra faltante que aún se ve hoy.</p>
+
+                    <span class="quote">“El Diablo construye rápido, pero el tico es más vivo”</span> – dice la
+                    tradición oral.</p>
+
+                    <p><strong>Vínculo con la identidad costarricense:</strong> Esta leyenda refleja el ingenio
+                        campesino tico y la moral colectiva contra el mal, con toques de sincretismo indígena-español.
+                        Es un clásico del romanticismo costarricense, similar a los cuentos de Aquileo J. Echeverría,
+                        donde el humano engaña al sobrenatural.</p>
+
+                    <!-- IMAGEN REAL DEL PUENTE DE PIEDRA -->
+                    <div class="text-center my-4">
+                        <img src="imagen1.jpg" class="img-fluid rounded shadow-lg"
+                            alt="Puente de Piedra en Grecia, Alajuela – formación natural con la piedra faltante de la leyenda"
+                            style="max-height: 400px; border: 4px solid #fff;">
+                        <p class="text-muted small mt-3 fst-italic">Puente de Piedra en Grecia, Alajuela – la piedra
+                            faltante que el Diablo no pudo colocar (Foto histórica, 1851-1900)</p>
+                    </div>
+                </div>
 
                 <!-- Leyenda 3: La sombra negra que pasó por debajo del caballo -->
-        <div class="legend-card mb-5">
-            <h4 class="story-title mb-3"><i class="fas fa-horse me-2"></i>La sombra negra que pasó por debajo del caballo</h4>
-            
-            <p class="lead">Relato familiar transmitido por mi abuela.</p>
-            
-            <p>Cuando mi abuela era niña, su mamá se enfermó de fiebre una noche. No había luz eléctrica ni carretera, así que salieron los tres a caballo rumbo a la botica del pueblo: su papá adelante guiando, su mamá en el medio y ella atrás, bien agarrada del vestido porque el aire de la sabana de noche pela.</p>
-            
-            <p>Pasaron por el cementerio. Solo alumbraba una luna llena grandísima, todo plateado y en silencio. De repente el caballo resopló fuerte y dio un brinco raro. Mi abuela sintió un frío que le subió por las piernas y vio una sombra negra, larga y sin forma, que pasó rapidísimo <strong>por debajo del caballo</strong> y se metió entre las cruces. No hacía ruido, ni pasos, ni cadenas… solo ese viento helado.</p>
-            
-            <p>Su mamá se santiguó rápido y la apretó fuerte. Mi abuela miró a su papá y lo vio pálido, con los ojos bien abiertos de miedo —algo que nunca le había visto—. Don José no dijo nada, clavó espuelas y salieron galopando. Nadie habló en todo el camino de vuelta. Al día siguiente, con la medicina, la mamá mejoró, pero nunca más pasaron de noche por ahí.</p>
-            
-            <span class="quote">“Eso no fue el Cadejos, m’hija… eso fue el mismo Diablo que anda buscando alma por esos caminos solos”</span> – siempre terminaba mi abuela.</p>
+                <div class="legend-card mb-5">
+                    <h4 class="story-title mb-3"><i class="fas fa-horse me-2"></i>La sombra negra que pasó por debajo
+                        del caballo</h4>
 
-            <p><strong>Vínculo con la identidad costarricense:</strong> Este testimonio forma parte de la tradición oral guanacasteca sobre los aparecidos en cementerios y caminos rurales. Refleja la mezcla de fe católica y miedo ancestral del campesino tico, cuando el caballo y la luna eran los únicos testigos de la noche. Es el tipo de vivencia que aparece en el costumbrismo de Joaquín Gutiérrez o en los relatos de ánimas de la sabana.</p>
-        </div>
+                    <p class="lead">Relato familiar transmitido por mi abuela.</p>
+
+                    <p>Cuando mi abuela era niña, su mamá se enfermó de fiebre una noche. No había luz eléctrica ni
+                        carretera, así que salieron los tres a caballo rumbo a la botica del pueblo: su papá adelante
+                        guiando, su mamá en el medio y ella atrás, bien agarrada del vestido porque el aire de la sabana
+                        de noche pela.</p>
+
+                    <p>Pasaron por el cementerio. Solo alumbraba una luna llena grandísima, todo plateado y en silencio.
+                        De repente el caballo resopló fuerte y dio un brinco raro. Mi abuela sintió un frío que le subió
+                        por las piernas y vio una sombra negra, larga y sin forma, que pasó rapidísimo <strong>por
+                            debajo del caballo</strong> y se metió entre las cruces. No hacía ruido, ni pasos, ni
+                        cadenas… solo ese viento helado.</p>
+
+                    <p>Su mamá se santiguó rápido y la apretó fuerte. Mi abuela miró a su papá y lo vio pálido, con los
+                        ojos bien abiertos de miedo —algo que nunca le había visto—. Don José no dijo nada, clavó
+                        espuelas y salieron galopando. Nadie habló en todo el camino de vuelta. Al día siguiente, con la
+                        medicina, la mamá mejoró, pero nunca más pasaron de noche por ahí.</p>
+
+                    <span class="quote">“Eso no fue el Cadejos, m’hija… eso fue el mismo Diablo que anda buscando alma
+                        por esos caminos solos”</span> – siempre terminaba mi abuela.</p>
+
+                    <p><strong>Vínculo con la identidad costarricense:</strong> Este testimonio forma parte de la
+                        tradición oral guanacasteca sobre los aparecidos en cementerios y caminos rurales. Refleja la
+                        mezcla de fe católica y miedo ancestral del campesino tico, cuando el caballo y la luna eran los
+                        únicos testigos de la noche. Es el tipo de vivencia que aparece en el costumbrismo de Joaquín
+                        Gutiérrez o en los relatos de ánimas de la sabana.</p>
+                </div>
 
                 <!-- Leyenda 3: Las voladoras (Guanacaste) -->
-        <div class="legend-card mb-5">
-            <h4 class="story-title mb-3"><i class="fas fa-crow me-2"></i>Las voladoras de Pueblo Viejo</h4>
-            
-            <p class="lead">Leyenda comunal de Pueblo Viejo y Barrahonda, más allá del río Tempisque, Guanacaste. Recopilada de voces del pueblo.</p>
-            
-            <p>Las voladoras no son más que brujas transformistas, igual que las famosas monas. Se dice que las voladoras rezan oraciones precolombinas, alabanzas a dioses que hoy desconocemos y que los españoles catalogaron como rezos al diablo. Todo con el fin de convertirse en seres lampiños con alas que las llevan a donde ellas quieran, para asustar a hombres que son infieles, borrachos o abusivos con sus mujeres, pero también se conocen -según la gente del pueblo- por ser viejas vagas sin oficio.</p>
-            
-            <p> En Pueblo Viejo -allá más adelante del río Tempisque- y parte de Barrahonda se escuchaba de vez en cuando que caían en las copas de un palo de guanacaste. Se sentaban a esperar que algún sabanero pasara de regreso de la cantina y le sacudían todo el palo mientras se reían con una risa diabólica y escandalosa. Cuando empezaron a construir más casas en el pueblo, se comenzó a escuchar caer en los techos, "JUAZ JUAZ JUAZ", hacían aquellas bichas después de que se pegaban aquel sopapo contra las latas del zinc, es que tenían que ir parando porque a veces el diablo las soltaba y no les daba fuerza para seguir volando. Ya casi no hay voladoras, ya casi no hay sustos, pero si un día de estos cae algo bien pesado en el techo, probablemente sea una de esas viejas vagas que al diablo se le cayó.</p>
-            
-            <span class="quote">“Si un día cae algo bien pesado en el techo… probablemente sea una de esas viejas vagas que al diablo se le cayó”</span> – refrán popular de Barrahonda.</p>
+                <div class="legend-card mb-5">
+                    <h4 class="story-title mb-3"><i class="fas fa-crow me-2"></i>Las voladoras de Pueblo Viejo</h4>
 
-            <p><strong>Vínculo con la identidad costarricense:</strong> Esta leyenda guanacasteca mezcla creencias indígenas, catolicismo colonial y humor sabanero. Refleja el sincretismo cultural y la crítica social disfrazada de miedo: castiga la vagancia, el machismo y la infidelidad. Aparece en el costumbrismo de autores como Adolfo Herrera García y en la tradición oral de la península de Nicoya, donde lo sobrenatural siempre tiene un toque de burla tica.</p>
+                    <p class="lead">Leyenda comunal de Pueblo Viejo y Barrahonda, más allá del río Tempisque,
+                        Guanacaste. Recopilada de voces del pueblo.</p>
+
+                    <p>Las voladoras no son más que brujas transformistas, igual que las famosas monas. Se dice que las
+                        voladoras rezan oraciones precolombinas, alabanzas a dioses que hoy desconocemos y que los
+                        españoles catalogaron como rezos al diablo. Todo con el fin de convertirse en seres lampiños con
+                        alas que las llevan a donde ellas quieran, para asustar a hombres que son infieles, borrachos o
+                        abusivos con sus mujeres, pero también se conocen -según la gente del pueblo- por ser viejas
+                        vagas sin oficio.</p>
+
+                    <p> En Pueblo Viejo -allá más adelante del río Tempisque- y parte de Barrahonda se escuchaba de vez
+                        en cuando que caían en las copas de un palo de guanacaste. Se sentaban a esperar que algún
+                        sabanero pasara de regreso de la cantina y le sacudían todo el palo mientras se reían con una
+                        risa diabólica y escandalosa. Cuando empezaron a construir más casas en el pueblo, se comenzó a
+                        escuchar caer en los techos, "JUAZ JUAZ JUAZ", hacían aquellas bichas después de que se pegaban
+                        aquel sopapo contra las latas del zinc, es que tenían que ir parando porque a veces el diablo
+                        las soltaba y no les daba fuerza para seguir volando. Ya casi no hay voladoras, ya casi no hay
+                        sustos, pero si un día de estos cae algo bien pesado en el techo, probablemente sea una de esas
+                        viejas vagas que al diablo se le cayó.</p>
+
+                    <span class="quote">“Si un día cae algo bien pesado en el techo… probablemente sea una de esas
+                        viejas vagas que al diablo se le cayó”</span> – refrán popular de Barrahonda.</p>
+
+                    <p><strong>Vínculo con la identidad costarricense:</strong> Esta leyenda guanacasteca mezcla
+                        creencias indígenas, catolicismo colonial y humor sabanero. Refleja el sincretismo cultural y la
+                        crítica social disfrazada de miedo: castiga la vagancia, el machismo y la infidelidad. Aparece
+                        en el costumbrismo de autores como Adolfo Herrera García y en la tradición oral de la península
+                        de Nicoya, donde lo sobrenatural siempre tiene un toque de burla tica.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- 6. SECCIÓN 3: ANTES PENSABA... AHORA PIENSO... (tu contenido original) -->
+        <div class="port-card">
+            <div class="section-header">
+                <h2>Sección 3: Rutina de aprendizaje “Antes pensaba… Ahora pienso…”</h2>
+            </div>
+            <div class="p-4">
+                <div class="reflection-card">
+                    <h6><strong>Emely Alfaro Espinoza(Ingeniería Electrónica)</strong></h6>
+                    <p><strong>Antes pensaba:</strong> Cuando inicié este curso tenía una expectativa grande por
+                        aprender sobre la literatura costarricense, ya que conocía muy pocos autores, obras y casi nada
+                        de los géneros literarios en los que ellos escribieron. A lo largo del curso he logrado aprender
+                        y entender porque un texto siempre tiene un amor imposible o porque una situación que sucedida
+                        en el país solo esta escrita desde un punto de vista, clase trabajadora o burguesía, entre otras
+                        cosas
+                    </p>
+                    <p><strong>Ahora pienso:</strong> Ahora pienso que este curso me ha ayudado a cuestionar más lo que
+                        leo porque al menos quiero entender en que contexto histórico está escrito, también me alegra
+                        haber descubierto el “talento oculto” que tienen los escritores costarricense, que la escritura
+                        no es cosa de extranjeros sino que nosotros lo tenemos y que debemos fortalecerlo y apoyarlo
+                        más; para que aquellos que quieren poner en hojas sus puntos de vista sobre la política o
+                        situaciones social, cuentos, poemas, novelas y demás, puedan hacerlo, no solo para beneficiarse
+                        ellos sino nosotros, el pueblo costarricense que necesita aumentar y fomentar su cultura.
+                </div>
+                <div class="reflection-card">
+                    <h6><strong>José Daniel Chaves Campos (Ingeniería del Software)</strong></h6>
+
+                    <p><strong>Antes pensaba:</strong>
+                        Que no teníamos tanta literatura.</p>
+
+                    <p><strong>Ahora pienso:</strong>
+                        Que tenemos un talento brutal en Costa Rica que casi nadie ve: músicos increíbles, atletas
+                        olímpicos, escritores, artistas, científicos, cocineras tradicionales, narradores orales… pero
+                        como sociedad solo hablamos de fútbol y nos perdemos de celebrar todo lo demás. Este portafolio
+                        me abrió los ojos: la verdadera identidad está en esas voces que casi nadie escucha.</p>
+                </div>
+                <div class="reflection-card">
+                    <h6><strong>Pedro Sánchez (Turismo)</strong></h6>
+                    <p><strong>Antes pensaba:</strong> El curso era solo leer libros antiguos.</p>
+                    <p><strong>Ahora pienso:</strong> Integra vivencias. Las comidas tradicionales son narrativa
+                        nacional; el romanticismo fortalece pertenencia.</p>
+                </div>
+                <div class="reflection-card">
+                    <h6><strong>Laura Herrera (Psicología)</strong></h6>
+                    <p><strong>Antes pensaba:</strong> La identidad tica era uniforme y pacífica.</p>
+                    <p><strong>Ahora pienso:</strong> Es compleja, con raíces indígenas. La literatura (incluso
+                        postmodernismo) la cuestiona y celebra.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. CONCLUSIÓN GRUPAL -->
+        <div class="port-card">
+            <div class="section-header">
+                <h2>Conclusión grupal</h2>
+            </div>
+            <div class="p-4">
+                <p class="lead">La elaboración de este e-portafolio vivencial marcó un antes y un después en nuestra
+                    comprensión de la identidad costarricense. Descubrimos que la literatura nacional no es un archivo
+                    del pasado, sino un reflejo vivo que se cocina en olla de barro, se cuenta junto al río y se cura
+                    con plantas medicinales.</p>
+                <p>Los relatos familiares y las leyendas nos mostraron que la tradición oral es el verdadero libro
+                    nacional. El ejercicio “Antes pensaba… Ahora pienso…” evidenció nuestra transformación: pasamos de
+                    ver la identidad como algo abstracto a experimentarla como experiencia cotidiana y colectiva.</p>
+                <p>Este curso y este trabajo nos enseñaron que preservar la memoria cultural es un acto de amor,
+                    resistencia y pura vida. ¡Gracias por acompañarnos en este viaje!</p>
+            </div>
+        </div>
+
+        <!-- 8. REFERENCIAS APA 7 -->
+        <div class="port-card">
+            <div class="section-header">
+                <h2>Referencias (APA 7ª edición)</h2>
+            </div>
+            <div class="p-4">
+                <ul>
+                    <li>Maritzacartin. (2019, 3 de noviembre). <em>Antiguo Puente de Piedra, Grecia, Alajuela,
+                            1851-1900</em>. Mi Costa Rica de Antaño.
+                        https://micostaricadeantano.com/2019/11/03/antiguo-puente-de-piedra-grecia-alajuela-1851-1900/
+                    </li>
+                    <li>Nacarina. (2013). <em>Prestiños</em> [Fotografía]. https://nacarina.com/wp-content/uploads/2013/09/prestinos.jpg</li>
+                </ul>
+            </div>
         </div>
 
     </div>
-</div>
-    <!-- 6. SECCIÓN 3: ANTES PENSABA... AHORA PIENSO... (tu contenido original) -->
-    <div class="port-card">
-        <div class="section-header"><h2>Sección 3: Rutina de aprendizaje “Antes pensaba… Ahora pienso…”</h2></div>
-        <div class="p-4">
-            <div class="reflection-card">
-                <h6><strong>Ana López (Administración)</strong></h6>
-                <p><strong>Antes pensaba:</strong> La literatura costarricense era solo cuentos viejos sin utilidad.</p>
-                <p><strong>Ahora pienso:</strong> Es un espejo vivo de nuestra identidad. El romanticismo de Jiménez une tradición y emoción; los relatos familiares me hicieron valorar mi herencia.</p>
-            </div>
-            <div class="reflection-card">
-                <h6><strong>Carlos Ramírez (Ingeniería)</strong></h6>
-                <p><strong>Antes pensaba:</strong> Identidad nacional = himno y bandera.</p>
-                <p><strong>Ahora pienso:</strong> Se vive en lo cotidiano. Los remedios herbales y el realismo de Gagini muestran resiliencia mestiza. Este trabajo me transformó.</p>
-            </div>
-            <div class="reflection-card">
-                <h6><strong>María González (Educación)</strong></h6>
-                <p><strong>Antes pensaba:</strong> Las leyendas eran supersticiones infantiles.</p>
-                <p><strong>Ahora pienso:</strong> Son memoria cultural. El costumbrismo las preserva; La Llorona refleja conflictos históricos.</p>
-            </div>
-            <div class="reflection-card">
-                <h6><strong>Pedro Sánchez (Turismo)</strong></h6>
-                <p><strong>Antes pensaba:</strong> El curso era solo leer libros antiguos.</p>
-                <p><strong>Ahora pienso:</strong> Integra vivencias. Las comidas tradicionales son narrativa nacional; el romanticismo fortalece pertenencia.</p>
-            </div>
-            <div class="reflection-card">
-                <h6><strong>Laura Herrera (Psicología)</strong></h6>
-                <p><strong>Antes pensaba:</strong> La identidad tica era uniforme y pacífica.</p>
-                <p><strong>Ahora pienso:</strong> Es compleja, con raíces indígenas. La literatura (incluso postmodernismo) la cuestiona y celebra.</p>
-            </div>
-        </div>
-    </div>
 
-    <!-- 7. CONCLUSIÓN GRUPAL -->
-    <div class="port-card">
-        <div class="section-header"><h2>Conclusión grupal</h2></div>
-        <div class="p-4">
-            <p class="lead">La elaboración de este e-portafolio vivencial marcó un antes y un después en nuestra comprensión de la identidad costarricense. Descubrimos que la literatura nacional no es un archivo del pasado, sino un reflejo vivo que se cocina en olla de barro, se cuenta junto al río y se cura con plantas medicinales.</p>
-            <p>Los relatos familiares y las leyendas nos mostraron que la tradición oral es el verdadero libro nacional. El ejercicio “Antes pensaba… Ahora pienso…” evidenció nuestra transformación: pasamos de ver la identidad como algo abstracto a experimentarla como experiencia cotidiana y colectiva.</p>
-            <p>Este curso y este trabajo nos enseñaron que preservar la memoria cultural es un acto de amor, resistencia y pura vida. ¡Gracias por acompañarnos en este viaje!</p>
-        </div>
-    </div>
+    <footer>
+        <p>E-Portafolio Vivencial Grupal – Grupo C | Literatura Costarricense e Identidad Nacional | UTN – III
+            Cuatrimestre 2025</p>
+    </footer>
 
-    <!-- 8. REFERENCIAS APA 7 -->
-    <div class="port-card">
-        <div class="section-header"><h2>Referencias (APA 7ª edición)</h2></div>
-        <div class="p-4">
-            <ul>
-                <li>Maritzacartin. (2019, 3 de noviembre). <em>Antiguo Puente de Piedra, Grecia, Alajuela, 1851-1900</em>. Mi Costa Rica de Antaño. https://micostaricadeantano.com/2019/11/03/antiguo-puente-de-piedra-grecia-alajuela-1851-1900/</li>
-            </ul>
-        </div>
-    </div>
-
-</div>
-
-<footer>
-    <p>E-Portafolio Vivencial Grupal – Grupo C | Literatura Costarricense e Identidad Nacional | UTN – III Cuatrimestre 2025</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
